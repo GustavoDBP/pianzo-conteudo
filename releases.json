@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b198",
+  "name": "Versão 1.0.98",
+  "body": "Assinatura sem cobrança enquanto os produtos não existem na Play\n\nSe a Google Play responde que premium_monthly e premium_yearly ainda não foram criados, \"Assinar\" liga o\nPremium só neste aparelho (sem cobrança, com o aviso \"em teste\") e \"Cancelar assinatura\" desliga; a Play não\ndesliga esse Premium. Quando os produtos existirem, a cobrança da Play assume sozinha."
+ },
+ {
   "tag_name": "b197",
   "name": "Versão 1.0.97",
   "body": "Conteúdo, notas das versões e a política no repositório público pianzo-conteudo\n\nO repositório do código pode ficar privado: o que o app baixa vai para o GustavoDBP/pianzo-conteudo (público),\ngerado daqui por tools/conteudo/publicar.sh. Músicas, lições e a Política de Privacidade (GitHub Pages) pelo\nworkflow conteudo.yml; a nota de cada versão vai para o releases.json pelo workflow de versão, e o app lê as\nnotas de lá. A distribuição fica só pela Google Play: sai o sabor github (APK dos Releases e a atualização\nautomática por fora da loja)."
@@ -293,10 +298,5 @@
   "tag_name": "b139",
   "name": "Versão 1.0.39",
   "body": "Tela da conta ao abrir: some só depois de entrar ou de continuar sem conta\n\n- Variável account_welcome_show, ligada por padrão: desliga ao entrar, criar a conta (aqui ou em\n  Configurações) ou tocar em \"Continuar sem conta\"\n- Fechar o app sem decidir não desliga: a tela volta na próxima abertura\n- Voltar nessa tela fecha o app (em vez de pular para a tela inicial sem decidir)"
- },
- {
-  "tag_name": "b138",
-  "name": "Versão 1.0.38",
-  "body": "Merge pull request #3 from GustavoDBP/ccr-679babaf-la32o2\n\nConta sem rolar e tela de login na primeira abertura"
  }
 ]
