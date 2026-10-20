@@ -1,0 +1,302 @@
+[
+ {
+  "tag_name": "b196",
+  "name": "Versão 1.0.96",
+  "body": "Política de Privacidade (GitHub Pages) e o link em Configurações → Sobre\n\ndocs/privacidade: o que o app coleta (conta, progresso e moedas no Firebase; assinatura pela Google Play;\nconteúdo do GitHub), o que fica só no aparelho e como excluir a conta (no app ou por e-mail), em português e\ninglês. Publicada pelo GitHub Pages em gustavodbp.github.io/pianzo/privacidade/."
+ },
+ {
+  "tag_name": "b195",
+  "name": "Versão 1.0.95",
+  "body": "Moedas na nuvem e de volta as das estrelas já ganhas\n\nAs moedas (estrelas que renderam, recompensa diária e músicas liberadas com moedas) passam a ir para a nuvem\ncom a conta. Cada estrela e cada dia rendem uma vez só, mesmo com dois aparelhos. Uma vez, as estrelas do\nhistórico que nunca renderam moedas (as de antes das moedas e as de quem reinstalou o app) passam a render.\nFormato do retrato 3: um app antigo não apaga as moedas da nuvem, pede para atualizar."
+ },
+ {
+  "tag_name": "b194",
+  "name": "Versão 1.0.94",
+  "body": "Atualização pela Google Play com as notas das versões que faltam\n\nAo abrir o app, a Play diz se há versão nova; se houver, a tela de atualização aparece sozinha (uma vez por\nversão) com as notas de todas as versões entre a instalada e a nova, e \"Atualizar\" faz a atualização da própria\nPlay sem sair do app. As notas vêm dos Releases do GitHub; o sabor github também passa a juntar as notas das\nversões que faltam. Configurações → Buscar atualizações volta a existir no sabor play."
+ },
+ {
+  "tag_name": "b193",
+  "name": "Versão 1.0.93",
+  "body": "Release: envia o .aab para o teste interno da Google Play\n\nCom o segredo PLAY_SERVICE_ACCOUNT_JSON, cada versão da main vai sozinha para o teste interno (sem ele, o passo é\npulado e o .aab continua só nos artefatos)."
+ },
+ {
+  "tag_name": "b192",
+  "name": "Versão 1.0.92",
+  "body": "Release: envia o .aab para o teste interno da Google Play\n\nCom o segredo PLAY_SERVICE_ACCOUNT_JSON, cada versão da main vai sozinha para o teste interno (sem ele, o passo é\npulado e o .aab continua só nos artefatos)."
+ },
+ {
+  "tag_name": "b191",
+  "name": "Versão 1.0.91",
+  "body": "Conta: o progresso que vem da nuvem não comemora nível de novo\n\nNum app recém-instalado, a tela inicial guardava o nível 1 como visto e, quando o progresso chegava da nuvem,\ncomemorava o nível de lá como se tivesse acabado de subir. Agora o nível que vem de outro aparelho conta como\njá visto. E o upload-artifact vai para a v6 (Node 24)."
+ },
+ {
+  "tag_name": "b190",
+  "name": "Versão 1.0.90",
+  "body": "minSdk 24 (exigido pela Proteção Automática da Google Play) e actions novas\n\n- minSdk 23 → 24 (Android 7.0).\n- Workflows nas versões das actions que rodam no Node 24 (checkout, setup-java, setup-gradle e upload-artifact v5)."
+ },
+ {
+  "tag_name": "b189",
+  "name": "Versão 1.0.89",
+  "body": "Android 16 (targetSdk 36), exigido pela Google Play\n\n- compileSdk e targetSdk 36.\n- O conteúdo se afasta do recorte da câmera (do Android 15 em diante a tela vai até ele).\n- Mantém o voltar de sempre (onBackPressed) e a tela deitada em tablets no Android 16."
+ },
+ {
+  "tag_name": "b188",
+  "name": "Versão 1.0.88",
+  "body": "Músicas: filtro por compositor\n\nBotão ♪ Compositor ao lado da busca abre a lista dos compositores (alfabética,\ncom quantas músicas cada um tem). O escolhido filtra junto com a categoria, as\nfavoritas e a busca; grafias diferentes do mesmo compositor viram um só."
+ },
+ {
+  "tag_name": "b187",
+  "name": "Versão 1.0.87",
+  "body": "Painel das moedas e moedas por estrela no resumo da música\n\n- Tocar no saldo abre um painel (no lugar da mensagem): o saldo e três cartões\n  com como ganhar (estrelas: acerto e quanto vale por nível; recompensa de todo\n  dia) e para que servem (preço para desbloquear). Valores de Coins, em dobro\n  no Premium.\n- No resumo da música, cada estrela mostra quanto rende (✓ nas já ganhas)."
+ },
+ {
+  "tag_name": "b186",
+  "name": "Versão 1.0.86",
+  "body": "Aprender: corrige crash nas músicas tocadas em versões antigas\n\nO último trecho aberto ficava em song_learn_<id>, a mesma chave em que versões\nantigas guardavam o modo guiado (booleano). Em músicas com esse valor antigo\n(no aparelho ou vindo da nuvem), getInt lançava ClassCastException ao tocar em\nAprender. Agora o trecho fica em song_section_<id>, a leitura não quebra com\ntipo errado, e os booleanos antigos são apagados ao abrir o app."
+ },
+ {
+  "tag_name": "b185",
+  "name": "Versão 1.0.85",
+  "body": "Plano anual com 25% de desconto: R$ 268,90\n\nO anual passa de R$ 249,90 para R$ 268,90 (25% a menos que 12 mensais,\nR$ 22,41 por mês). A economia, R$ 89,90, cobre 3 mensalidades inteiras,\nentão o cartão diz \"3 meses de graça no ano\", sem o \"quase\"."
+ },
+ {
+  "tag_name": "b184",
+  "name": "Versão 1.0.84",
+  "body": "Merge pull request #15 from GustavoDBP/claude/peaceful-keller-2itndv\n\nFavoritas, teclado sem teclas presas, fim de trecho com resumo no Aprender e registro de erros"
+ },
+ {
+  "tag_name": "b183",
+  "name": "Versão 1.0.83",
+  "body": "Merge pull request #14 from GustavoDBP/claude/zealous-allen-o967mq\n\nAssinatura com plano mensal e anual (30% de desconto)"
+ },
+ {
+  "tag_name": "b182",
+  "name": "Versão 1.0.82",
+  "body": "Modo Aprender (Premium): músicas divididas em trechos para repetir\n\nNa prévia da música, além de Escutar e Tocar, o botão Aprender abre os\ntrechos da peça em cartões (compassos e melhor acerto). O escolhido abre\nna tela da música e se repete sozinho, quantas vezes o usuário quiser;\n‹ Trecho N/M › troca de trecho e a linha do tempo mostra os cortes.\nNo plano padrão o botão vem em dourado e convida para o Premium.\n\ncore/SongSections corta onde a música respira (nota longa ou pausa na\nmelodia, cadência, volta de tema, mudança de tom, compasso ou andamento),\npesado contra o tamanho do trecho por programação dinâmica; começa na\nanacruse quando a frase tem uma. SongCheck confere os trechos de todas\nas músicas."
+ },
+ {
+  "tag_name": "b181",
+  "name": "Versão 1.0.81",
+  "body": "Barra de XP com trilho mais escuro e ícone do ouvido inteiro\n\n- O trilho da barra de nível fica mais escuro que o cartão (antes sumia no\n  cartão do perfil)\n- Ícone do ouvido: a orelha um pouco à esquerda e duas ondas de som\n  inteiras à direita (antes um pedaço de onda parecia cortado)"
+ },
+ {
+  "tag_name": "b180",
+  "name": "Versão 1.0.80",
+  "body": "Nível e foto num cartão só do perfil\n\nO canto de cima mostra o perfil num cartão: \"Nível 2\" com a barra de XP e a\nfoto ao lado; tocar em qualquer parte abre a conta."
+ },
+ {
+  "tag_name": "b179",
+  "name": "Versão 1.0.79",
+  "body": "Nível escrito por extenso e música de fundo pausa no modal da peça\n\n- No canto de cima, um selo \"Nível 2\" com a barra de XP até o próximo, ao\n  lado da foto (sai o número no canto da foto, que parecia contador de\n  avisos); tocar abre a conta. Premium: aro dourado na foto\n- Tela inicial: ao abrir o modal da peça que toca ao fundo, a música de\n  fundo pausa (o modal toca a prévia) e volta ao fechar"
+ },
+ {
+  "tag_name": "b178",
+  "name": "Versão 1.0.78",
+  "body": "Painel da aula: botão da etapa não fica mais cortado ao pulsar"
+ },
+ {
+  "tag_name": "b177",
+  "name": "Versão 1.0.77",
+  "body": "Painel da aula: etapas em cartões para tocar, sem o botão Refazer\n\n- Cada etapa é um cartão com a ação à direita: a de agora fica destacada,\n  com Começar/Continuar pulsando; as feitas têm De novo (repete só aquela);\n  a teoria tem Ler; as que ainda não chegaram ficam com cadeado\n- Uma frase diz o que fazer (\"Toque na etapa destacada para começar.\")\n- A meta vai junto do detalhe da etapa (\"Meta: uma passada sem erros\")\n- Os cartões entram um depois do outro"
+ },
+ {
+  "tag_name": "b176",
+  "name": "Versão 1.0.76",
+  "body": "Versões passam a ser 1.0.N (N = número do build)"
+ },
+ {
+  "tag_name": "b175",
+  "name": "Versão 1.0.75",
+  "body": "Trilha: perguntas claras, teoria opcional, enunciado inteiro\n\n- As 66 perguntas da teoria viram perguntas completas, com verbo (\"Qual\n  tecla toca esta nota?\", \"Com a mão direita na posição de Dó, qual tecla o\n  dedo 3 toca?\"), nos 4 idiomas\n- A teoria é sempre opcional: no painel da aula ela aparece como \"Opcional\"\n  (toque para ler) e Começar vai direto às etapas de prática; a aula conta\n  como feita quando a prática é cumprida\n- Enunciado da pergunta não fica mais cortado numa linha ao trocar de\n  pergunta (o texto refaz as linhas depois que a ilustração aparece ou some)"
+ },
+ {
+  "tag_name": "b174",
+  "name": "Versão 1.0.74",
+  "body": "Revisa as páginas de teoria da trilha\n\nReescreve os textos das 51 páginas dos 14 módulos (pt, en, es, it):\numa ideia por frase, instruções diretas (\"use a tecla logo à direita\")\ne listas nas páginas de figuras, articulação, armadura e dedilhado."
+ },
+ {
+  "tag_name": "b173",
+  "name": "Versão 1.0.73",
+  "body": "Escola: sem mensagens no meio, instrução em todo exercício, dedilhado na nota\n\n- Sem a mensagem de \"Etapa concluída\" (a etapa seguinte abre sozinha) e sem\n  a de \"Aula concluída\" (confete e a trilha anda até a próxima aula)\n- Todo exercício diz o que fazer numa frase, logo abaixo do título: leitura,\n  intervalos e acordes, dedilhado, ritmo e ouvido; nas perguntas da teoria,\n  \"Toque na resposta certa\" ou \"Toque as N notas no teclado\"\n- Pergunta da teoria em largura cheia (não fica cortada)\n- Dedilhado: o número do dedo em cima de cada nota, como numa partitura; a\n  tecla a tocar só acende (sem \"E5\")\n- Placar da aula: \"Meta 1/3\""
+ },
+ {
+  "tag_name": "b172",
+  "name": "Versão 1.0.72",
+  "body": "Trilha: aula num painel e etapas em sequência; divisões das teclas\n\n- Tocar numa aula da trilha abre um painel que a explica (unidade, o que se\n  aprende, as etapas com a meta) e Começar; as etapas abrem uma depois da\n  outra, sem a tela intermediária da aula (sai a AulaActivity)\n- Explicação de cada uma das 24 aulas nos 4 idiomas\n- Piano: contorno fino nas teclas brancas, para a divisão aparecer também\n  sobre o papel claro das lições"
+ },
+ {
+  "tag_name": "b171",
+  "name": "Versão 1.0.71",
+  "body": "Escola refeita: Trilha de aulas e Treinos\n\n- Trilha: um caminho só, linear (como o Duolingo), de 24 aulas em 8\n  unidades. Toda aula segue o mesmo método: o conceito (teoria) e logo a\n  aplicação no teclado (dedilhado, leitura, ritmo, ouvido, acordes), cada\n  etapa com uma meta curta; as aulas abrem uma depois da outra\n- Tela da aula: as etapas em ordem e um botão só; cada etapa abre o treino\n  com a meta e volta para a aula ao cumprir (\"Etapa concluída ✓\")\n- Treinos: prática livre de uma habilidade (leitura, dedilhado, ritmo,\n  acordes e intervalos, ouvido), com uma tela de escolhas em botões antes\n  de começar\n- Saem a aula do dia, as trilhas por tipo e a lista antiga da teoria\n- Aulas concluídas vão para a nuvem; textos nos 4 idiomas; testes do curso"
+ },
+ {
+  "tag_name": "b170",
+  "name": "Versão 1.0.70",
+  "body": "Trilha com cara de música e mais movimento\n\n- A estrada vira uma pauta que ondula (duas ondas somadas, não uma régua) e\n  as etapas viram cabeças de nota: cheias com ✓ nas feitas, vazadas nas\n  abertas, apagadas com cadeado nas bloqueadas\n- A etapa atual flutua, pulsa e tem uma notinha ♪ pulando ao lado, no ritmo\n- Ao abrir, as notas entram uma depois da outra e a linha do progresso corre\n  até a etapa atual; ao voltar de um treino, corre até a nova\n- Tocar numa etapa dá um pulinho"
+ },
+ {
+  "tag_name": "b169",
+  "name": "Versão 1.0.69",
+  "body": "Trilha para cada treino da Escola\n\n- Cada área (teoria, leitura, técnica, intervalos e acordes, ritmo, ouvido)\n  abre uma tela de trilha: as etapas numa estrada que rola na horizontal,\n  feitas com ✓ (e estrelas na técnica), a atual pulsando, as bloqueadas com\n  cadeado\n- Embaixo, a etapa tocada com o que configurar antes (mão na técnica, clave\n  na leitura e nos intervalos, exemplo de partitura no ritmo) e Começar\n- A aula do dia abre direto no exercício certo\n- Saem os painéis da técnica e do ritmo/ouvido, a lista antiga da teoria e o\n  seletor de clave/nível de dentro da leitura"
+ },
+ {
+  "tag_name": "b168",
+  "name": "Versão 1.0.68",
+  "body": "Ritmo e ouvido: painel antes de começar\n\n- Como o da técnica: o nível (‹ › troca; os não liberados com cadeado e o\n  que falta para liberar), o nome, a dica e Começar\n- Ritmo: à direita, um exemplo de partitura do nível; ouvido: o que vai\n  acontecer\n- Abre ao tocar em Ritmo ou Ouvido na Escola e na etapa da aula\n- Dica de cada nível do ouvido nos 4 idiomas"
+ },
+ {
+  "tag_name": "b167",
+  "name": "Versão 1.0.67",
+  "body": "Técnica: painel antes do exercício, com a mão\n\n- Como o das músicas: o exercício (‹ › troca), o dedilhado da mão escolhida\n  e a dica, a mão (os mesmos botões das músicas), as estrelas dela e Começar\n- Abre ao tocar em Técnica na Escola e na etapa de aquecimento da aula (já\n  com o próximo exercício e a mão que falta)\n- Sai a pílula de mão de dentro do exercício"
+ },
+ {
+  "tag_name": "b166",
+  "name": "Versão 1.0.66",
+  "body": "Técnica, ritmo e ouvido sem seletor no título\n\n- Nos três treinos, o título vira texto (o exercício ou o nível), sem ▾\n- Na Escola, tocar em Técnica pergunta o exercício (com as estrelas de cada\n  mão); em Ritmo e Ouvido, o nível (os não liberados com cadeado)\n- A aula do dia continua abrindo direto no exercício/nível certo"
+ },
+ {
+  "tag_name": "b165",
+  "name": "Versão 1.0.65",
+  "body": "Tipo de treino só na Escola\n\n- Na leitura e nos exercícios livres, a pílula do título deixa de trocar o\n  tipo de treino: o nome do treino fica como título e a pílula só troca a\n  clave (e, na leitura, o nível)\n- Em Escola → Intervalos e acordes, escolhe-se ali intervalos, acordes ou\n  várias notas\n- O aviso do limite diário manda escolher outro treino na Escola"
+ },
+ {
+  "tag_name": "b164",
+  "name": "Versão 1.0.64",
+  "body": "Escola mais limpa: só a etapa de agora e um botão\n\n- A aula de hoje mostra só a etapa atual em destaque (ícone, \"Etapa 1 de 5 ·\n  Aquecimento\", o exercício e a meta) e um botão grande Começar/Continuar\n- As etapas viram uma fileira de bolinhas embaixo (✓ as feitas)\n- As áreas ficam discretas em \"Treinar à vontade\", só com ícone e nome\n- Sai o subtítulo do topo, a frase do professor e a dica do dia (que foi\n  para o ?, junto com Como estudar)"
+ },
+ {
+  "tag_name": "b163",
+  "name": "Versão 1.0.63",
+  "body": "Merge pull request #13 from GustavoDBP/ccr-053bc076-a0zob3\n\nEscola: Aprender e Praticar viram um só lugar, com o professor"
+ },
+ {
+  "tag_name": "b162",
+  "name": "Versão 1.0.62",
+  "body": "Tela inicial mais limpa\n\n- Cada cartão com uma linha só embaixo do título: o próximo módulo, a clave e o\n  nível de leitura, a última música (ou quantas há) e os dias seguidos\n- Sai do cartão Progresso a linha e a barra de XP (o anel da foto já mostra)\n- Saudação só com \"Bom dia/Boa tarde/Boa noite\" (os dias seguidos ficam no cartão)"
+ },
+ {
+  "tag_name": "b161",
+  "name": "Versão 1.0.61",
+  "body": "Tela da conta cabe sem rolar\n\n- Foto com o anel um pouco menor (72dp) e a conta (logo do Google ou envelope)\n  na mesma linha do e-mail, no lugar da etiqueta separada\n- Painel do nível compacto: quanto falta e \"Como ganhar XP\" na mesma linha,\n  barra e de onde veio o XP numa linha só\n- Menos espaço entre os blocos da coluna da esquerda"
+ },
+ {
+  "tag_name": "b160",
+  "name": "Versão 1.0.60",
+  "body": "Merge pull request #12 from GustavoDBP/ccr-9f9097fd-rtvrlb\n\nZera os pontos antigos e mostra o XP em volta da foto do perfil"
+ },
+ {
+  "tag_name": "b159",
+  "name": "Versão 1.0.59",
+  "body": "Merge pull request #11 from GustavoDBP/ccr-9f9097fd-rtvrlb\n\nRemove pontos e combo; recompensa diária em moedas"
+ },
+ {
+  "tag_name": "b158",
+  "name": "Versão 1.0.58",
+  "body": "Foto do perfil da conta Google no avatar\n\nBaixada uma vez e guardada no aparelho; enquanto não chega (ou sem foto, como no\nlogin por e-mail), fica a inicial. Apagada ao sair ou excluir a conta."
+ },
+ {
+  "tag_name": "b157",
+  "name": "Versão 1.0.57",
+  "body": "Nível de pianista: XP de músicas, lições e treino\n\nEstrelas novas dão XP conforme a dificuldade (10/25/50), módulos do Aprender 20 e\nlinhas do treino 1 (+1 sem erros). Calculado do histórico, então vale para o\npassado e acompanha a nuvem. Selo do nível na foto do perfil, barra no cartão\nProgresso, +XP no fim da música e da lição, seção na tela Progresso e\ncomemoração ao subir. O nível do treino vira \"nível de leitura\"."
+ },
+ {
+  "tag_name": "b156",
+  "name": "Versão 1.0.56",
+  "body": "Música de fundo sorteada de toda a biblioteca\n\nAntes seguia uma lista fixa de 15 peças e sempre começava pela mesma\n(Gymnopédie). Agora sorteia entre todas as músicas, sem repetir as últimas\n(nem entre uma abertura e outra), para a pessoa conhecer peças que pode tocar."
+ },
+ {
+  "tag_name": "b155",
+  "name": "Versão 1.0.55",
+  "body": "Tela inicial: ícones dos cartões não são mais cortados ao flutuar\n\nO cartão cortava o que passava do espaçamento interno; o ícone sobe 5dp na\nanimação e perdia o topo."
+ },
+ {
+  "tag_name": "b154",
+  "name": "Versão 1.0.54",
+  "body": "Configurações: convite dourado ao Premium no topo (plano padrão)"
+ },
+ {
+  "tag_name": "b153",
+  "name": "Versão 1.0.53",
+  "body": "Convite ao Premium: \"Agora não\" como botão, logo abaixo de Assinar"
+ },
+ {
+  "tag_name": "b152",
+  "name": "Versão 1.0.52",
+  "body": "Primeira abertura: convite ao Premium depois do idioma e da conta\n\nA tela de assinatura aparece uma vez como convite (título \"Experimente o\nPremium\", sem voltar, com \"Agora não\"); quem já é Premium não vê."
+ },
+ {
+  "tag_name": "b151",
+  "name": "Versão 1.0.51",
+  "body": "Configurações: Conta e Idioma como atalhos lado a lado; ícone do globo\n\nOs dois cartões viram botões inteiros (ícone, título, valor atual e ›), diferentes\ndas seções de ajustes. O ícone do idioma era desenhado como ♫: agora é o globo."
+ },
+ {
+  "tag_name": "b150",
+  "name": "Versão 1.0.50",
+  "body": "Escolha do idioma com confirmação\n\nTocar num idioma só marca e mostra a tela nele; vale ao tocar em Confirmar.\nSaindo sem confirmar, os textos voltam ao idioma guardado."
+ },
+ {
+  "tag_name": "b149",
+  "name": "Versão 1.0.49",
+  "body": "Merge pull request #10 from GustavoDBP/ccr-0230e9ec-3fdh2h\n\nTraduções (pt, en, es, it) e identidade visual do Pianzo"
+ },
+ {
+  "tag_name": "b148",
+  "name": "Versão 1.0.48",
+  "body": "Merge pull request #9 from GustavoDBP/ccr-0230e9ec-3fdh2h\n\nNovo nome do app: Pianzo"
+ },
+ {
+  "tag_name": "b147",
+  "name": "Versão 1.0.47",
+  "body": "Merge pull request #8 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nPlano só no perfil, mais chamativo; convite Premium e atualização no topo"
+ },
+ {
+  "tag_name": "b146",
+  "name": "Versão 1.0.46",
+  "body": "Merge pull request #7 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nPerfil abre a conta, página de assinatura e modal da música redesenhado"
+ },
+ {
+  "tag_name": "b145",
+  "name": "Versão 1.0.45",
+  "body": "Merge pull request #6 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nTelas inicial e de músicas mais limpas, com moedas e perfil no canto"
+ },
+ {
+  "tag_name": "b144",
+  "name": "Versão 1.0.44",
+  "body": "Merge pull request #5 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nPrévia em todas as músicas, com desbloqueio nas bloqueadas"
+ },
+ {
+  "tag_name": "b143",
+  "name": "Versão 1.0.43",
+  "body": "Merge pull request #4 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nMoedas, estrelas por música e plano Premium (sem cobrança)"
+ },
+ {
+  "tag_name": "b142",
+  "name": "Versão 1.0.42",
+  "body": "Conta sem conta: tela limpa, em dois passos\n\n- Uma coluna só, centralizada: \"Salve seu progresso\", Continuar com o Google, Entrar com e-mail e (na\n  abertura) Continuar sem conta\n- E-mail e senha só aparecem ao escolher e-mail, com \"‹\" para voltar; criar conta e esqueci a senha\n  viram links embaixo do botão\n- Na abertura, sem barra no topo; fundo mais calmo atrás\n- Campo de senha com a mesma fonte do resto (não monoespaçada)"
+ },
+ {
+  "tag_name": "b141",
+  "name": "Versão 1.0.41",
+  "body": "Conta: excluir sai do cartão e fica como link discreto na confirmação de sair"
+ },
+ {
+  "tag_name": "b140",
+  "name": "Versão 1.0.40",
+  "body": "Conta: \"‹\" e título presos no canto de cima à esquerda, como em Configurações"
+ },
+ {
+  "tag_name": "b139",
+  "name": "Versão 1.0.39",
+  "body": "Tela da conta ao abrir: some só depois de entrar ou de continuar sem conta\n\n- Variável account_welcome_show, ligada por padrão: desliga ao entrar, criar a conta (aqui ou em\n  Configurações) ou tocar em \"Continuar sem conta\"\n- Fechar o app sem decidir não desliga: a tela volta na próxima abertura\n- Voltar nessa tela fecha o app (em vez de pular para a tela inicial sem decidir)"
+ },
+ {
+  "tag_name": "b138",
+  "name": "Versão 1.0.38",
+  "body": "Merge pull request #3 from GustavoDBP/ccr-679babaf-la32o2\n\nConta sem rolar e tela de login na primeira abertura"
+ },
+ {
+  "tag_name": "b137",
+  "name": "Versão 1.0.37",
+  "body": "Merge pull request #2 from GustavoDBP/ccr-679babaf-la32o2\n\nConta com visual novo e convite para entrar na primeira abertura"
+ }
+]

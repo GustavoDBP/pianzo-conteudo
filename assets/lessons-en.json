@@ -1,0 +1,249 @@
+{
+  "format": 1,
+  "modules": [
+    {
+      "id": "pauta",
+      "title": "The staff and the notes",
+      "summary": "The seven notes, lines and spaces, low and high",
+      "pages": [
+        {"title": "The seven notes", "text": "Music uses only seven note names: C, D, E, F, G, A and B. After B, the sequence starts again on C, a little higher. The distance from one C to the next C is called an octave.", "visual": {"kind": "score", "rh": "c'4 d' e' f' g' a' b' c''", "staff": 0, "below": ["C", "D", "E", "F", "G", "A", "B", "C"]}},
+        {"title": "The staff", "text": "Notes are written on the staff: 5 lines and 4 spaces, always counted from bottom to top. Each note sits on a line (the line cuts through the middle of the note) or in a space (between two lines).", "visual": {"kind": "score", "rh": "e'1 g' b' d'' f''", "staff": 0, "below": ["1st line", "2nd line", "3rd line", "4th line", "5th line"]}},
+        {"title": "Going up and down", "text": "The higher on the staff, the higher the note sounds. From a line to the space just above, you move one note (E → F). From a line to the line above, you skip a note (E → G).", "visual": {"kind": "score", "rh": "e'4 f' g' a' e' g' b' d''", "staff": 0, "below": ["E", "F", "G", "A", "E", "G", "B", "D"]}}
+      ],
+      "quiz": [
+        {"prompt": "Which of the two notes is higher?", "visual": {"kind": "score", "rh": "c''2 f'2", "staff": 0, "below": ["1st", "2nd"]}, "options": ["The 1st", "The 2nd"], "answer": 0, "explain": "The 1st sits higher on the staff, so it sounds higher."},
+        {"prompt": "In the order of notes (C, D, E…), which comes after E?", "options": ["F", "G", "D"], "answer": 0, "shuffle": true, "explain": "C, D, E, F, G, A, B."},
+        {"prompt": "How many lines does the staff have?", "options": ["5", "4", "6"], "answer": 0, "shuffle": true, "explain": "It has 5 lines and 4 spaces."},
+        {"prompt": "Is this note on a line or in a space?", "visual": {"kind": "score", "rh": "a'1", "staff": 0}, "options": ["Line", "Space"], "answer": 1, "explain": "It sits between the 2nd and 3rd lines: it's in a space."},
+        {"prompt": "In the order of notes, which comes before C?", "options": ["B", "D", "A"], "answer": 0, "shuffle": true, "explain": "After B, the pattern starts over at C."}
+      ]
+    },
+    {
+      "id": "teclado",
+      "title": "The keyboard",
+      "summary": "Black key groups, C, and octaves",
+      "pages": [
+        {"title": "White and black keys", "text": "The black keys come in groups of 2 and 3, one after the other. This pattern repeats across the whole keyboard and it's your map: by looking at it, you can find any note.", "visual": {"kind": "keys", "low": 48, "high": 71, "marked": [49, 51, 54, 56, 58, 61, 63, 66, 68, 70]}},
+        {"title": "Finding the notes", "text": "C is the white key just left of the group of 2 black keys. D sits between the 2 black keys, and E right after them. F is the white key just left of the group of 3 black keys; then come G, A and B.", "visual": {"kind": "keys", "low": 60, "high": 71, "marked": [60], "labels": {"60": "C", "62": "D", "64": "E", "65": "F", "67": "G", "69": "A", "71": "B"}}},
+        {"title": "Middle C and octaves", "text": "The C closest to the middle of the keyboard is middle C, called C4. The next C to the right is C5; to the left, C3. The other notes take the number of the C before them: the D right after C4 is D4.", "visual": {"kind": "keys", "low": 48, "high": 84, "marked": [60], "labels": {"48": "C3", "60": "C4", "62": "D4", "72": "C5", "84": "C6"}}}
+      ],
+      "quiz": [
+        {"prompt": "Where is middle C (C4)?", "play": [60], "explain": "It's the C near the middle of the keyboard."},
+        {"prompt": "Where is an F? Any F counts.", "play": [65], "anyOctave": true, "explain": "F is the white key just left of the group of 3 black keys."},
+        {"prompt": "Where is D4?", "play": [62], "explain": "The D just above middle C."},
+        {"prompt": "Where is a B? Any B counts.", "play": [71], "anyOctave": true, "explain": "B is the last white key before the next C."},
+        {"prompt": "Where is C, compared to the black keys?", "visual": {"kind": "keys", "low": 48, "high": 71}, "options": ["Left of the group of 2 black keys", "Left of the group of 3 black keys", "Between two black keys"], "answer": 0, "shuffle": true, "explain": "It comes right before the group of 2 black keys."}
+      ]
+    },
+    {
+      "id": "clave-sol",
+      "title": "Treble clef",
+      "summary": "Notes on the lines and spaces for the right hand",
+      "pages": [
+        {"title": "What the clef does", "text": "The clef, at the start of the staff, gives the notes their names. The treble clef curls around the 2nd line: the note on that line is G4, the G just above middle C. It's used for middle and high sounds, almost always the right hand.", "visual": {"kind": "score", "rh": "g'1", "staff": 0, "below": ["G4"]}},
+        {"title": "Notes on the lines", "text": "From bottom to top, the treble clef lines are: E4, G4, B4, D5 and F5. Notice that from one line to the next you always skip a note.", "visual": {"kind": "score", "rh": "e'1 g' b' d'' f''", "staff": 0, "below": ["E4", "G4", "B4", "D5", "F5"]}},
+        {"title": "Notes in the spaces", "text": "From bottom to top, the treble clef spaces are: F4, A4, C5 and E5. Read together, they spell \"F-A-C-E\".", "visual": {"kind": "score", "rh": "f'1 a' c'' e''", "staff": 0, "below": ["F4", "A4", "C5", "E5"]}},
+        {"title": "Use landmarks", "text": "You don't need to memorize everything at once. Remember three landmark notes and count the others from them: C4 (on a ledger line below the staff), G4 (2nd line) and C5 (3rd space).", "visual": {"kind": "score", "rh": "c'1 g' c''", "staff": 0, "below": ["C4", "G4", "C5"]}}
+      ],
+      "quiz": [
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "rh": "b'1", "staff": 0}, "options": ["B4", "A4", "C5"], "answer": 0, "shuffle": true, "explain": "3rd line of the treble clef: B4."},
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "rh": "f'1", "staff": 0}, "options": ["F4", "E4", "G4"], "answer": 0, "shuffle": true, "explain": "1st space: F4."},
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "rh": "d''1", "staff": 0}, "options": ["D5", "C5", "E5"], "answer": 0, "shuffle": true, "explain": "4th line: D5."},
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "rh": "e''1", "staff": 0}, "options": ["E5", "F5", "D5"], "answer": 0, "shuffle": true, "explain": "4th space: E5."},
+        {"prompt": "Which key plays this note?", "visual": {"kind": "score", "rh": "a'1", "staff": 0}, "play": [69], "explain": "2nd space: A4."},
+        {"prompt": "Which keys play these notes, from left to right?", "visual": {"kind": "score", "rh": "c'4 e' g' c''", "staff": 0}, "play": [60, 64, 67, 72], "explain": "C4, E4, G4, C5."}
+      ]
+    },
+    {
+      "id": "clave-fa",
+      "title": "Bass clef",
+      "summary": "Notes on the lines and spaces for the left hand",
+      "pages": [
+        {"title": "The bass clef", "text": "The two dots of the bass clef sit above and below the 4th line: the note on that line is F3, the F just below middle C. It's used for low sounds, almost always the left hand.", "visual": {"kind": "score", "lh": "f1", "staff": 1, "below": ["F3"]}},
+        {"title": "Notes on the lines", "text": "From bottom to top, the bass clef lines are: G2, B2, D3, F3 and A3. Here too, from one line to the next you always skip a note.", "visual": {"kind": "score", "lh": "g,1 b, d f a", "staff": 1, "below": ["G2", "B2", "D3", "F3", "A3"]}},
+        {"title": "Notes in the spaces", "text": "From bottom to top, the bass clef spaces are: A2, C3, E3 and G3.", "visual": {"kind": "score", "lh": "a,1 c e g", "staff": 1, "below": ["A2", "C3", "E3", "G3"]}},
+        {"title": "Use landmarks", "text": "Remember three landmark notes and count the others from them: C3 (2nd space), F3 (4th line) and C4, middle C, on a ledger line just above the staff.", "visual": {"kind": "score", "lh": "c1 f c'", "staff": 1, "below": ["C3", "F3", "C4"]}}
+      ],
+      "quiz": [
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "lh": "d1", "staff": 1}, "options": ["D3", "B3", "F3"], "answer": 0, "shuffle": true, "explain": "3rd line of the bass clef: D3."},
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "lh": "a,1", "staff": 1}, "options": ["A2", "C3", "G2"], "answer": 0, "shuffle": true, "explain": "1st space: A2."},
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "lh": "g1", "staff": 1}, "options": ["G3", "E3", "A3"], "answer": 0, "shuffle": true, "explain": "4th space: G3."},
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "lh": "b,1", "staff": 1}, "options": ["B2", "D3", "G2"], "answer": 0, "shuffle": true, "explain": "2nd line: B2."},
+        {"prompt": "Which key plays this note?", "visual": {"kind": "score", "lh": "f1", "staff": 1}, "play": [53], "explain": "4th line: F3."},
+        {"prompt": "Which keys play these notes, from left to right?", "visual": {"kind": "score", "lh": "c4 e g c'", "staff": 1}, "play": [48, 52, 55, 60], "explain": "C3, E3, G3, C4."}
+      ]
+    },
+    {
+      "id": "sistema",
+      "title": "Ledger lines and the grand staff",
+      "summary": "Ledger lines and both staves together",
+      "pages": [
+        {"title": "Ledger lines", "text": "When a note goes above or below the staff, we draw small extra lines just for it: ledger lines. To read them, keep counting line, space, line… as if the staff went on.", "visual": {"kind": "score", "rh": "c'1 b g'' a'' c'''", "staff": 0, "below": ["C4", "B3", "G5", "A5", "C6"]}},
+        {"title": "The grand staff", "text": "On the piano we read two staves at once, joined by a brace. The top one (treble clef) is usually the right hand; the bottom one (bass clef), the left hand. What is lined up vertically is played together.", "visual": {"kind": "score", "rh": "e''2 c''2", "lh": "c2 g,2", "staff": -1}},
+        {"title": "Middle C in both clefs", "text": "C4 sits right between the two staves: on a ledger line below the treble clef or on a ledger line above the bass clef. Both ways of writing it are the same key.", "visual": {"kind": "score", "rh": "c'1 r1", "lh": "r1 c'1", "staff": -1}}
+      ],
+      "quiz": [
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "rh": "a''1", "staff": 0}, "options": ["A5", "G5", "B5"], "answer": 0, "shuffle": true, "explain": "One ledger line above the staff: A5."},
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "rh": "c'1", "staff": 0}, "options": ["C4", "D4", "B3"], "answer": 0, "shuffle": true, "explain": "One ledger line below the treble clef: C4."},
+        {"prompt": "What is the name of this note?", "visual": {"kind": "score", "lh": "e,1", "staff": 1}, "options": ["E2", "G2", "C2"], "answer": 0, "shuffle": true, "explain": "One ledger line below the bass clef: E2."},
+        {"prompt": "What do these two notes have in common?", "visual": {"kind": "score", "rh": "c'1", "lh": "r1 c'1", "staff": -1}, "options": ["The same key", "Different keys, an octave apart", "Neighboring keys"], "answer": 0, "shuffle": true, "explain": "Both are C4, the same key."},
+        {"prompt": "Which key plays this note?", "visual": {"kind": "score", "lh": "c'1", "staff": 1}, "play": [60], "explain": "Ledger line above the bass clef: C4."}
+      ]
+    },
+    {
+      "id": "figuras",
+      "title": "Note values and beats",
+      "summary": "How long each note lasts",
+      "pages": [
+        {"title": "The beat", "text": "Music has a steady beat, like the ticking of a clock: each tick is a beat. Note values tell you how many beats each note lasts. In the example, four notes of one beat each.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 c'' c'' c''", "staff": 0, "below": ["1", "2", "3", "4"]}},
+        {"title": "Whole, half, and quarter notes", "text": "Whole note: hollow note head, no stem — lasts 4 beats.\nHalf note: hollow, with a stem — 2 beats.\nQuarter note: filled, with a stem — 1 beat.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''1 c''2 c'' c''4 c'' c'' c''", "staff": 0, "below": ["4 beats", "2", "2", "1", "1", "1", "1"]}},
+        {"title": "Eighth and sixteenth notes", "text": "Eighth note: one flag (or a beam joining several) — half a beat.\nSixteenth note: two flags (or two beams) — a quarter of a beat.", "visual": {"kind": "score", "time": "2/4", "showTime": true, "rh": "c''8 c'' c'' c'' c''16 c'' c'' c'' c'' c'' c'' c''", "staff": 0, "below": ["½", "½", "½", "½", "¼", "¼", "¼", "¼", "¼", "¼", "¼", "¼"]}},
+        {"title": "Counting", "text": "To count eighth notes, split each beat in two by saying out loud \"1 and 2 and 3 and 4 and\". The notes fall on the numbers and on the \"and\"s.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 c''8 c'' c''4 c''8 c''", "staff": 0, "below": ["1", "2", "&", "3", "4", "&"]}}
+      ],
+      "quiz": [
+        {"prompt": "How many beats does this note last?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2 r2", "staff": 0}, "options": ["2", "1", "4"], "answer": 0, "shuffle": true, "explain": "Half note: 2 beats."},
+        {"prompt": "How many beats does this note last?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''1", "staff": 0}, "options": ["4", "2", "3"], "answer": 0, "shuffle": true, "explain": "Whole note: 4 beats."},
+        {"prompt": "How long does an eighth note last?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''8 r8 r4 r2", "staff": 0}, "options": ["Half a beat", "1 beat", "A quarter of a beat"], "answer": 0, "shuffle": true, "explain": "Eighth note: half a beat."},
+        {"prompt": "How many eighth notes fit in a quarter note?", "options": ["2", "4", "1"], "answer": 0, "shuffle": true, "explain": "Quarter note = 1 beat = 2 eighth notes."},
+        {"prompt": "Which of the two notes lasts longer?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2 c''4 r4", "staff": 0, "below": ["1st", "2nd"]}, "options": ["The 1st", "The 2nd"], "answer": 0, "explain": "The half note (2 beats) lasts longer than the quarter note (1)."}
+      ]
+    },
+    {
+      "id": "pausas",
+      "title": "Rests",
+      "summary": "Silence has a length too",
+      "pages": [
+        {"title": "Silence gets written too", "text": "Every note value has a rest of the same length. During a rest you don't play, but you keep counting the beats.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r1 r2 r2 r4 r r r", "staff": 0, "below": ["4 beats", "2", "2", "1", "1", "1", "1"]}},
+        {"title": "Whole × half", "text": "The whole rest (4 beats) hangs below the 4th line. The half rest (2 beats) sits on top of the 3rd line. To remember: the whole rest, \"heavier\", hangs down.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r1 r2 r2", "staff": 0, "below": ["whole", "half", "half"]}},
+        {"title": "Eighth and sixteenth rests", "text": "The eighth rest (half a beat) has one hook. The sixteenth rest (a quarter of a beat) has two.", "visual": {"kind": "score", "time": "2/4", "showTime": true, "rh": "r8 r r r r16 r r r r r r r", "staff": 0, "below": ["½", "½", "½", "½", "¼", "¼", "¼", "¼", "¼", "¼", "¼", "¼"]}},
+        {"title": "In practice", "text": "Play on the notes and lift your fingers on the rests, without stopping the count.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 r c'' r c''2 r2", "staff": 0, "below": ["play", "—", "play", "—", "play", "—"]}}
+      ],
+      "quiz": [
+        {"prompt": "How many beats does this rest last?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r4 c''4 c''2", "staff": 0}, "options": ["1 beat", "2 beats", "Half a beat"], "answer": 0, "shuffle": true, "explain": "Quarter rest: 1 beat."},
+        {"prompt": "How many beats does this rest last?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r1", "staff": 0}, "options": ["4 beats", "2 beats", "1 beat"], "answer": 0, "shuffle": true, "explain": "Hanging from the 4th line: whole rest, 4 beats."},
+        {"prompt": "How many beats does this rest last?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r2 c''2", "staff": 0}, "options": ["2 beats", "4 beats", "1 beat"], "answer": 0, "shuffle": true, "explain": "Sitting on the 3rd line: half rest, 2 beats."},
+        {"prompt": "What do you do when a rest appears?", "options": ["Don't play, keep counting", "Wait as long as you like", "Hold the previous note"], "answer": 0, "shuffle": true, "explain": "You don't play, but you keep counting."}
+      ]
+    },
+    {
+      "id": "compasso",
+      "title": "Measures",
+      "summary": "Bar lines, time signatures, and the strong beat",
+      "pages": [
+        {"title": "Bar lines", "text": "Beats are grouped into bars (measures), separated by vertical bar lines. The double bar line, with a thick line, marks the end of the piece.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 d'' e'' f'' g''1", "staff": 0}},
+        {"title": "Time signature", "text": "The two numbers at the start of the piece are the time signature. The top one tells how many beats each bar has. The bottom one tells which note value gets one beat (4 = quarter note, 8 = eighth note). In 4/4: four quarter notes per bar.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 c'' c'' c''", "staff": 0, "below": ["1", "2", "3", "4"]}},
+        {"title": "3/4 and 2/4", "text": "3/4 has three beats per bar, like a waltz: ONE-two-three. 2/4 has two, like a march. In all of them, the first beat of the bar is the strongest.", "visual": {"kind": "score", "time": "3/4", "showTime": true, "rh": "c''4 c'' c'' c'' c'' c''", "staff": 0, "below": ["ONE", "2", "3", "ONE", "2", "3"]}},
+        {"title": "6/8", "text": "6/8 has six eighth notes per bar, grouped in threes. Count 1-2-3 4-5-6, leaning on 1 and 4.", "visual": {"kind": "score", "time": "6/8", "showTime": true, "rh": "c''8 c'' c'' c'' c'' c''", "staff": 0, "below": ["1", "2", "3", "4", "5", "6"]}}
+      ],
+      "quiz": [
+        {"prompt": "In 3/4 time, how many beats fit in each bar?", "options": ["3", "4", "2"], "answer": 0, "shuffle": true, "explain": "The top number: 3."},
+        {"prompt": "In 4/4, which note value is one beat?", "options": ["Quarter note", "Half note", "Eighth note"], "answer": 0, "shuffle": true, "explain": "The bottom 4 stands for the quarter note."},
+        {"prompt": "This 4/4 bar is incomplete. Which note value is missing?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2 c''4", "staff": 0}, "options": ["A quarter note", "A half note", "An eighth note"], "answer": 0, "shuffle": true, "explain": "2 + 1 = 3 beats; 1 beat is missing: a quarter note."},
+        {"prompt": "How many eighth notes fit in a 6/8 bar?", "options": ["6", "8", "3"], "answer": 0, "shuffle": true, "explain": "6 on top, eighth note (8) on the bottom."},
+        {"prompt": "Which is the strongest beat of a bar?", "options": ["The 1st", "The last", "All the same"], "answer": 0, "shuffle": true, "explain": "The first beat is the strongest."}
+      ]
+    },
+    {
+      "id": "ponto-ligadura",
+      "title": "Dots, ties, and slurs",
+      "summary": "Notes that last longer",
+      "pages": [
+        {"title": "Dotted notes", "text": "A dot after a note adds half of its value. Dotted half note: 2 + 1 = 3 beats. Dotted quarter note: 1 + ½ = one and a half beats.", "visual": {"kind": "score", "time": "3/4", "showTime": true, "rh": "c''2. c''4. c''8 c''4", "staff": 0, "below": ["3 beats", "1½", "½", "1"]}},
+        {"title": "Ties", "text": "A curve joining two notes of the same pitch (the same key) adds their lengths: play only the first and hold the key through both. It's used, for example, to carry a note across the bar line.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2 c''2~ c''2 c''2", "staff": 0, "below": ["2", "hold", "(+2)", "2"]}},
+        {"title": "Slurs", "text": "A curve over different notes doesn't add time: it asks you to play smoothly (legato), moving from one note to the next with no silence between them.", "visual": null}
+      ],
+      "quiz": [
+        {"prompt": "How many beats does a dotted half note last?", "visual": {"kind": "score", "time": "3/4", "showTime": true, "rh": "c''2.", "staff": 0}, "options": ["3", "2", "2½"], "answer": 0, "shuffle": true, "explain": "2 + 1 = 3."},
+        {"prompt": "How many beats does a dotted quarter note last?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4. c''8 r2", "staff": 0}, "options": ["1½ beats", "2 beats", "1 beat"], "answer": 0, "shuffle": true, "explain": "1 + ½."},
+        {"prompt": "How many times do you press the key for these tied notes?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2~ c''2", "staff": 0}, "options": ["1", "2", "4"], "answer": 0, "shuffle": true, "explain": "A tie: play once and hold."},
+        {"prompt": "What does a curve over different notes mean?", "options": ["Play smoothly (legato)", "Add the lengths together", "Repeat the notes"], "answer": 0, "shuffle": true, "explain": "That's a slur."}
+      ]
+    },
+    {
+      "id": "acidentes",
+      "title": "Sharp, flat, and natural",
+      "summary": "Black keys and half steps",
+      "pages": [
+        {"title": "Sharp ♯", "text": "The sharp (♯) raises a note by a half step: use the key just to the right, usually a black one. F♯ is the black key just right of F.", "visual": {"kind": "score", "rh": "f'2 fis'2", "staff": 0, "below": ["F", "F♯"]}},
+        {"title": "Flat ♭", "text": "The flat (♭) lowers a note by a half step: use the key just to the left. B♭ is the black key just left of B.", "visual": {"kind": "score", "rh": "b'2 bes'2", "staff": 0, "below": ["B", "B♭"]}},
+        {"title": "Natural ♮", "text": "The natural sign (♮) cancels a sharp or flat: the note goes back to natural (the white key).", "visual": {"kind": "score", "rh": "fis'2 f'2", "staff": 0, "below": ["F♯", "F"]}},
+        {"title": "Good until the bar line", "text": "A sharp or flat written next to a note lasts until the end of that bar. In the next bar, the note goes back to normal.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "fis'4 g' fis' g' f'1", "staff": 0, "below": ["F♯", "G", "F♯", "G", "F"]}},
+        {"title": "One key, two names", "text": "Each black key has two names: C♯ is the same key as D♭, and F♯ is the same as G♭. The music uses whichever name makes more sense.", "visual": {"kind": "keys", "low": 60, "high": 71, "marked": [61, 66], "labels": {"61": "C♯", "63": "E♭", "66": "F♯", "68": "G♯", "70": "B♭"}}}
+      ],
+      "quiz": [
+        {"prompt": "Which key plays this note?", "visual": {"kind": "score", "rh": "fis'1", "staff": 0}, "play": [66], "explain": "F♯4: the black key just right of F4."},
+        {"prompt": "Which key plays this note?", "visual": {"kind": "score", "lh": "bes1", "staff": 1}, "play": [58], "explain": "B♭3: the black key just left of B3."},
+        {"prompt": "Which key plays this note?", "visual": {"kind": "score", "rh": "ees''1", "staff": 0}, "play": [75], "explain": "E♭5: the black key just left of E5."},
+        {"prompt": "What does the natural sign do to the note?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": ["natural"]}, "options": ["Goes back to the natural note", "Raises a half step", "Lowers a half step"], "answer": 0, "shuffle": true, "explain": "It cancels a ♯ or ♭."},
+        {"prompt": "Which note uses the same key as C♯?", "options": ["D♭", "B♭", "C♭"], "answer": 0, "shuffle": true, "explain": "A half step above C is the same as a half step below D."}
+      ]
+    },
+    {
+      "id": "armadura",
+      "title": "Key signature",
+      "summary": "The piece's fixed sharps and flats",
+      "pages": [
+        {"title": "Fixed accidentals", "text": "The sharps or flats right after the clef form the key signature. They apply to the whole piece, in every octave. Here, every F is F♯, even without a ♯ next to the note.", "visual": {"kind": "score", "fifths": 1, "rh": "g'4 a' b' c'' d'' e'' fis'' g''", "staff": 0, "below": ["G", "A", "B", "C", "D", "E", "F♯", "G"]}},
+        {"title": "Read the key signature first", "text": "Before you start playing, look at the key signature and remember which notes change. With a ♭ on the B line, every B becomes B♭.", "visual": {"kind": "score", "fifths": -1, "rh": "f'4 g' a' bes' c'' d'' e'' f''", "staff": 0, "below": ["F", "G", "A", "B♭", "C", "D", "E", "F"]}},
+        {"title": "Order of accidentals", "text": "Sharps always come in this order: F, C, G, D, A, E, B. Flats, in the opposite order: B, E, A, D, G, C, F.\nWith none: C major (or A minor). With 1♯: G major. With 1♭: F major.", "visual": {"kind": "score", "fifths": 7, "rh": "r1", "staff": 0}}
+      ],
+      "quiz": [
+        {"prompt": "With this key signature, which note sounds?", "visual": {"kind": "score", "fifths": -1, "rh": "bes'1", "staff": 0}, "options": ["B♭", "B", "C"], "answer": 0, "shuffle": true, "explain": "The key signature has B♭."},
+        {"prompt": "With this key signature, which key plays this note?", "visual": {"kind": "score", "fifths": 1, "rh": "fis''1", "staff": 0}, "play": [78], "explain": "The key signature turns F into F♯: F♯5."},
+        {"prompt": "A ♯ in the key signature, on the F line, applies to which Fs?", "visual": {"kind": "score", "fifths": 1, "rh": "r1", "staff": 0}, "options": ["Every F in the piece", "Only the first F", "Only the Fs on that line"], "answer": 0, "shuffle": true, "explain": "It applies to every F, in every octave."},
+        {"prompt": "What is the first sharp that appears in a key signature?", "options": ["F♯", "C♯", "G♯"], "answer": 0, "shuffle": true, "explain": "The order is F, C, G, D, A, E, B."}
+      ]
+    },
+    {
+      "id": "andamento-dinamica",
+      "title": "Tempo and dynamics",
+      "summary": "Speed and volume",
+      "pages": [
+        {"title": "Tempo", "text": "Tempo is the speed of the music. It can be a number (♩ = 100: a hundred quarter notes per minute, like on a metronome) or Italian words such as Adagio (slow), Moderato (moderate) and Allegro (fast).", "visual": {"kind": "glyphs", "glyphs": ["texto:Adagio", "texto:Andante", "texto:Moderato", "texto:Allegro", "texto:Presto"], "captions": ["slow", "walking pace", "moderate", "fast", "very fast"]}},
+        {"title": "Dynamics", "text": "Dynamics are the volume. The letters come from Italian: p (piano) is soft and f (forte) is loud; pp and ff, even more. To play softly, press the keys more lightly; to play loudly, more firmly.", "visual": {"kind": "glyphs", "glyphs": ["", "", "", "", "", ""], "captions": ["very soft", "soft", "medium soft", "medium loud", "loud", "very loud"]}},
+        {"title": "Crescendo and diminuendo", "text": "The sign that opens up asks you to get louder little by little (crescendo). The one that closes asks you to get softer little by little (diminuendo). Sometimes they are written out: cresc. and dim.", "visual": {"kind": "glyphs", "glyphs": ["<cresc>", "<dim>"], "captions": ["crescendo", "diminuendo"]}},
+        {"title": "Tempo changes", "text": "rit. or rall.: slow down gradually. accel.: speed up gradually. a tempo: go back to the earlier tempo. The fermata asks you to hold the note longer than its value.", "visual": {"kind": "glyphs", "glyphs": ["texto:rit.", "texto:accel.", "texto:a tempo", ""], "captions": ["slow down", "speed up", "back to tempo", "fermata"]}}
+      ],
+      "quiz": [
+        {"prompt": "What does this sign mean?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": [""]}, "options": ["Loud", "Soft", "Fast"], "answer": 0, "shuffle": true, "explain": "f = forte (loud)."},
+        {"prompt": "What does this sign mean?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": [""]}, "options": ["Very soft", "Very loud", "Rest"], "answer": 0, "shuffle": true, "explain": "pp = pianissimo."},
+        {"prompt": "What does Allegro mean?", "options": ["Fast", "Slow", "Loud"], "answer": 0, "shuffle": true, "explain": "Allegro is fast and lively."},
+        {"prompt": "What does this sign ask for?", "visual": {"kind": "glyphs", "glyphs": ["<cresc>"], "captions": [""]}, "options": ["Get louder little by little", "Get softer little by little", "Speed up"], "answer": 0, "shuffle": true, "explain": "It's a crescendo."},
+        {"prompt": "What does the fermata ask for?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": [""]}, "options": ["Hold the note a bit longer", "Play it short", "Repeat"], "answer": 0, "shuffle": true, "explain": "Hold the note beyond its value."}
+      ]
+    },
+    {
+      "id": "articulacao-repeticao",
+      "title": "Articulations and repeats",
+      "summary": "How to play each note and where to go next",
+      "pages": [
+        {"title": "Articulations", "text": "Small signs next to a note tell you how to play it:\n• Staccato (dot): short and detached.\n• Tenuto (line): hold its full value.\n• Accent (>): stress the note, louder.", "visual": {"kind": "glyphs", "glyphs": ["", "", ""], "captions": ["staccato", "tenuto", "accent"]}},
+        {"title": "Repeat signs", "text": "Bar lines with two dots mark a passage to repeat. When you reach the end repeat bar, go back to the start repeat bar (or to the beginning of the piece, if there is none) and play the passage once more.", "visual": {"kind": "glyphs", "onStaff": true, "glyphs": ["", ""], "captions": ["start", "go back and repeat"]}},
+        {"title": "1st and 2nd endings", "text": "In a repeated passage with endings, the 1st ending is played only the first time. On the repeat, skip the 1st ending and go straight to the 2nd.", "visual": {"kind": "glyphs", "glyphs": ["texto:1.", "texto:2."], "captions": ["1st time", "2nd time"]}},
+        {"title": "D.C., D.S., Fine, and Coda", "text": "• D.C. (da capo): go back to the beginning.\n• D.S. (dal segno): go back to the sign.\n• Fine: the end.\n• Coda: jump to the marked final section.\nIn the app's pieces the repeats are already written out; in printed music you'll find these signs.", "visual": {"kind": "glyphs", "glyphs": ["texto:D.C.", "", "texto:Fine", ""], "captions": ["from the start", "sign", "end", "coda"]}}
+      ],
+      "quiz": [
+        {"prompt": "How do you play a staccato note?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": [""]}, "options": ["Short and detached", "Very long", "Softer"], "answer": 0, "shuffle": true, "explain": "Dot = short and detached."},
+        {"prompt": "What do you do when you reach this sign?", "visual": {"kind": "glyphs", "onStaff": true, "glyphs": [""], "captions": [""]}, "options": ["Go back and repeat the section", "Stop the piece", "Play faster"], "answer": 0, "shuffle": true, "explain": "End of the repeat: go back and repeat."},
+        {"prompt": "What does D.C. mean?", "options": ["Go back to the beginning", "Go to the end", "Play louder"], "answer": 0, "shuffle": true, "explain": "Da capo: from the beginning."},
+        {"prompt": "On the second time through the repeat, which ending do you play?", "options": ["The 2nd ending", "The 1st ending", "Both"], "answer": 0, "shuffle": true, "explain": "The second time, skip the 1st ending and go to the 2nd."}
+      ]
+    },
+    {
+      "id": "dedilhado",
+      "title": "Fingering and hand position",
+      "summary": "Finger numbers and C position",
+      "pages": [
+        {"title": "Finger numbers", "text": "On both hands, the fingers have numbers:\nthumb = 1, index = 2, middle = 3, ring = 4, little finger = 5.", "visual": {"kind": "glyphs", "glyphs": ["texto:1", "texto:2", "texto:3", "texto:4", "texto:5"], "captions": ["thumb", "index", "middle", "ring", "pinky"]}},
+        {"title": "C position", "text": "Right hand: thumb (1) on C4 and one finger on each white key, up to the little finger (5) on G4.\nLeft hand: little finger (5) on C3 and one finger on each white key, up to the thumb (1) on G3.", "visual": {"kind": "keys", "low": 48, "high": 67, "marked": [48, 60], "labels": {"48": "5", "50": "4", "52": "3", "53": "2", "55": "1", "60": "1", "62": "2", "64": "3", "65": "4", "67": "5"}}},
+        {"title": "In the sheet music", "text": "The numbers next to the notes tell you which finger to use. Following the fingering keeps you from running out of fingers mid-phrase. In scales, the thumb passes under the other fingers so the hand can keep going.", "visual": {"kind": "score", "rh": "c'4-1 d'-2 e'-3 f'-1 g'-2 a'-3 b'-4 c''-5", "staff": 0}}
+      ],
+      "quiz": [
+        {"prompt": "Which finger is number 1?", "options": ["Thumb", "Pinky", "Index"], "answer": 0, "shuffle": true, "explain": "The thumb is 1, on both hands."},
+        {"prompt": "With the right hand in C position (thumb on C4), which key does finger 3 play?", "play": [64], "explain": "Thumb on C4: finger 3 lands on E4."},
+        {"prompt": "In the C major scale with the right hand, which finger plays F, right after finger 3 on E?", "visual": {"kind": "score", "rh": "c'4-1 d'-2 e'-3 f' g' a' b' c''", "staff": 0}, "options": ["1", "4", "5"], "answer": 0, "shuffle": true, "explain": "The thumb passes under: F with finger 1."},
+        {"prompt": "Which finger is number 5?", "options": ["Pinky", "Ring", "Thumb"], "answer": 0, "shuffle": true, "explain": "The pinky is 5."}
+      ]
+    }
+  ]
+}

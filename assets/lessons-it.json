@@ -1,0 +1,249 @@
+{
+  "format": 1,
+  "modules": [
+    {
+      "id": "pauta",
+      "title": "Il pentagramma e le note",
+      "summary": "Le sette note, linee e spazi, gravi e acuti",
+      "pages": [
+        {"title": "Le sette note", "text": "La musica usa solo sette nomi di note: Do, Re, Mi, Fa, Sol, La e Si. Dopo il Si, la sequenza ricomincia dal Do, un po' più acuto. La distanza da un Do al Do successivo si chiama ottava.", "visual": {"kind": "score", "rh": "c'4 d' e' f' g' a' b' c''", "staff": 0, "below": ["Do", "Re", "Mi", "Fa", "Sol", "La", "Si", "Do"]}},
+        {"title": "Il pentagramma", "text": "Le note si scrivono sul pentagramma: 5 linee e 4 spazi, contati sempre dal basso verso l'alto. Ogni nota sta su una linea (la linea taglia la nota a metà) o in uno spazio (tra due linee).", "visual": {"kind": "score", "rh": "e'1 g' b' d'' f''", "staff": 0, "below": ["1ª linea", "2ª linea", "3ª linea", "4ª linea", "5ª linea"]}},
+        {"title": "Salire e scendere", "text": "Più in alto sul pentagramma, più acuta suona la nota. Da una linea allo spazio subito sopra, avanzi di una nota (Mi → Fa). Da una linea alla linea sopra, salti una nota (Mi → Sol).", "visual": {"kind": "score", "rh": "e'4 f' g' a' e' g' b' d''", "staff": 0, "below": ["Mi", "Fa", "Sol", "La", "Mi", "Sol", "Si", "Re"]}}
+      ],
+      "quiz": [
+        {"prompt": "Quale delle due note è più acuta?", "visual": {"kind": "score", "rh": "c''2 f'2", "staff": 0, "below": ["1ª", "2ª"]}, "options": ["La 1ª", "La 2ª"], "answer": 0, "explain": "La 1ª è più in alto sul pentagramma, quindi è più acuta."},
+        {"prompt": "Nell'ordine delle note (Do, Re, Mi…), quale viene dopo il Mi?", "options": ["Fa", "Sol", "Re"], "answer": 0, "shuffle": true, "explain": "Do, Re, Mi, Fa, Sol, La, Si."},
+        {"prompt": "Quante linee ha il pentagramma?", "options": ["5", "4", "6"], "answer": 0, "shuffle": true, "explain": "Sono 5 linee e 4 spazi."},
+        {"prompt": "Questa nota è su una linea o in uno spazio?", "visual": {"kind": "score", "rh": "a'1", "staff": 0}, "options": ["Linea", "Spazio"], "answer": 1, "explain": "Sta tra la 2ª e la 3ª linea: è uno spazio."},
+        {"prompt": "Nell'ordine delle note, quale viene prima del Do?", "options": ["Si", "Re", "La"], "answer": 0, "shuffle": true, "explain": "Dopo il Si la sequenza ricomincia dal Do."}
+      ]
+    },
+    {
+      "id": "teclado",
+      "title": "La tastiera",
+      "summary": "Gruppi di tasti neri, il Do e le ottave",
+      "pages": [
+        {"title": "Tasti bianchi e neri", "text": "I tasti neri sono a gruppi di 2 e di 3, uno dopo l'altro. Questo disegno si ripete su tutta la tastiera ed è la tua mappa: guardandolo, trovi qualsiasi nota.", "visual": {"kind": "keys", "low": 48, "high": 71, "marked": [49, 51, 54, 56, 58, 61, 63, 66, 68, 70]}},
+        {"title": "Trovare le note", "text": "Il Do è il tasto bianco subito a sinistra del gruppo di 2 neri. Il Re sta tra i 2 neri, e il Mi subito dopo. Il Fa è il bianco subito a sinistra del gruppo di 3 neri; poi vengono Sol, La e Si.", "visual": {"kind": "keys", "low": 60, "high": 71, "marked": [60], "labels": {"60": "Do", "62": "Re", "64": "Mi", "65": "Fa", "67": "Sol", "69": "La", "71": "Si"}}},
+        {"title": "Do centrale e ottave", "text": "Il Do più vicino al centro della tastiera è il Do centrale, chiamato Do4. Il Do successivo a destra è il Do5; a sinistra, il Do3. Le altre note prendono il numero del Do che viene prima: il Re subito dopo il Do4 è il Re4.", "visual": {"kind": "keys", "low": 48, "high": 84, "marked": [60], "labels": {"48": "Do3", "60": "Do4", "62": "Re4", "72": "Do5", "84": "Do6"}}}
+      ],
+      "quiz": [
+        {"prompt": "Dov'è il Do centrale (Do4)?", "play": [60], "explain": "È il Do vicino al centro della tastiera."},
+        {"prompt": "Dov'è un Fa? Vale qualsiasi Fa.", "play": [65], "anyOctave": true, "explain": "Il Fa è il bianco a sinistra del gruppo di 3 neri."},
+        {"prompt": "Dov'è il Re4?", "play": [62], "explain": "Il Re subito sopra il Do centrale."},
+        {"prompt": "Dov'è un Si? Vale qualsiasi Si.", "play": [71], "anyOctave": true, "explain": "Il Si è l'ultimo bianco prima del Do successivo."},
+        {"prompt": "Dov'è il Do, rispetto ai tasti neri?", "visual": {"kind": "keys", "low": 48, "high": 71}, "options": ["A sinistra del gruppo di 2 neri", "A sinistra del gruppo di 3 neri", "Tra due neri"], "answer": 0, "shuffle": true, "explain": "Viene subito prima del gruppo di 2 neri."}
+      ]
+    },
+    {
+      "id": "clave-sol",
+      "title": "Chiave di violino",
+      "summary": "Note su linee e spazi della mano destra",
+      "pages": [
+        {"title": "A cosa serve la chiave", "text": "La chiave, all'inizio del pentagramma, dà il nome alle note. La chiave di violino si avvolge sulla 2ª linea: la nota su quella linea è il Sol4, il Sol subito sopra il Do centrale. Si usa per i suoni medi e acuti, quasi sempre della mano destra.", "visual": {"kind": "score", "rh": "g'1", "staff": 0, "below": ["Sol4"]}},
+        {"title": "Note sulle linee", "text": "Dal basso verso l'alto, le linee della chiave di violino sono: Mi4, Sol4, Si4, Re5 e Fa5. Nota che, da una linea all'altra, si salta sempre una nota.", "visual": {"kind": "score", "rh": "e'1 g' b' d'' f''", "staff": 0, "below": ["Mi4", "Sol4", "Si4", "Re5", "Fa5"]}},
+        {"title": "Note negli spazi", "text": "Dal basso verso l'alto, gli spazi della chiave di violino sono: Fa4, La4, Do5 e Mi5.", "visual": {"kind": "score", "rh": "f'1 a' c'' e''", "staff": 0, "below": ["Fa4", "La4", "Do5", "Mi5"]}},
+        {"title": "Usa dei riferimenti", "text": "Non serve memorizzare tutto subito. Ricorda tre note àncora e conta le altre a partire da loro: Do4 (su un taglio addizionale sotto il pentagramma), Sol4 (2ª linea) e Do5 (3º spazio).", "visual": {"kind": "score", "rh": "c'1 g' c''", "staff": 0, "below": ["Do4", "Sol4", "Do5"]}}
+      ],
+      "quiz": [
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "rh": "b'1", "staff": 0}, "options": ["Si4", "La4", "Do5"], "answer": 0, "shuffle": true, "explain": "3ª linea della chiave di violino: Si4."},
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "rh": "f'1", "staff": 0}, "options": ["Fa4", "Mi4", "Sol4"], "answer": 0, "shuffle": true, "explain": "1º spazio: Fa4."},
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "rh": "d''1", "staff": 0}, "options": ["Re5", "Do5", "Mi5"], "answer": 0, "shuffle": true, "explain": "4ª linea: Re5."},
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "rh": "e''1", "staff": 0}, "options": ["Mi5", "Fa5", "Re5"], "answer": 0, "shuffle": true, "explain": "4º spazio: Mi5."},
+        {"prompt": "Quale tasto suona questa nota?", "visual": {"kind": "score", "rh": "a'1", "staff": 0}, "play": [69], "explain": "2º spazio: La4."},
+        {"prompt": "Quali tasti suonano queste note, da sinistra a destra?", "visual": {"kind": "score", "rh": "c'4 e' g' c''", "staff": 0}, "play": [60, 64, 67, 72], "explain": "Do4, Mi4, Sol4, Do5."}
+      ]
+    },
+    {
+      "id": "clave-fa",
+      "title": "Chiave di basso",
+      "summary": "Note su linee e spazi della mano sinistra",
+      "pages": [
+        {"title": "La chiave di basso", "text": "I due punti della chiave di basso stanno uno sopra e uno sotto la 4ª linea: la nota su quella linea è il Fa3, il Fa subito sotto il Do centrale. Si usa per i suoni gravi, quasi sempre della mano sinistra.", "visual": {"kind": "score", "lh": "f1", "staff": 1, "below": ["Fa3"]}},
+        {"title": "Note sulle linee", "text": "Dal basso verso l'alto, le linee della chiave di basso sono: Sol2, Si2, Re3, Fa3 e La3. Anche qui, da una linea all'altra, si salta sempre una nota.", "visual": {"kind": "score", "lh": "g,1 b, d f a", "staff": 1, "below": ["Sol2", "Si2", "Re3", "Fa3", "La3"]}},
+        {"title": "Note negli spazi", "text": "Dal basso verso l'alto, gli spazi della chiave di basso sono: La2, Do3, Mi3 e Sol3.", "visual": {"kind": "score", "lh": "a,1 c e g", "staff": 1, "below": ["La2", "Do3", "Mi3", "Sol3"]}},
+        {"title": "Usa dei riferimenti", "text": "Ricorda tre note àncora e conta le altre a partire da loro: Do3 (2º spazio), Fa3 (4ª linea) e Do4, il Do centrale, su un taglio addizionale subito sopra il pentagramma.", "visual": {"kind": "score", "lh": "c1 f c'", "staff": 1, "below": ["Do3", "Fa3", "Do4"]}}
+      ],
+      "quiz": [
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "lh": "d1", "staff": 1}, "options": ["Re3", "Si3", "Fa3"], "answer": 0, "shuffle": true, "explain": "3ª linea della chiave di basso: Re3."},
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "lh": "a,1", "staff": 1}, "options": ["La2", "Do3", "Sol2"], "answer": 0, "shuffle": true, "explain": "1º spazio: La2."},
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "lh": "g1", "staff": 1}, "options": ["Sol3", "Mi3", "La3"], "answer": 0, "shuffle": true, "explain": "4º spazio: Sol3."},
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "lh": "b,1", "staff": 1}, "options": ["Si2", "Re3", "Sol2"], "answer": 0, "shuffle": true, "explain": "2ª linea: Si2."},
+        {"prompt": "Quale tasto suona questa nota?", "visual": {"kind": "score", "lh": "f1", "staff": 1}, "play": [53], "explain": "4ª linea: Fa3."},
+        {"prompt": "Quali tasti suonano queste note, da sinistra a destra?", "visual": {"kind": "score", "lh": "c4 e g c'", "staff": 1}, "play": [48, 52, 55, 60], "explain": "Do3, Mi3, Sol3, Do4."}
+      ]
+    },
+    {
+      "id": "sistema",
+      "title": "Tagli addizionali e doppio pentagramma",
+      "summary": "I tagli addizionali e i due pentagrammi insieme",
+      "pages": [
+        {"title": "Tagli addizionali", "text": "Quando la nota va sopra o sotto il pentagramma, disegniamo piccole linee extra solo per lei: i tagli addizionali. Per leggerli, continua a contare linea, spazio, linea… come se il pentagramma proseguisse.", "visual": {"kind": "score", "rh": "c'1 b g'' a'' c'''", "staff": 0, "below": ["Do4", "Si3", "Sol5", "La5", "Do6"]}},
+        {"title": "Il doppio pentagramma", "text": "Al pianoforte leggiamo due pentagrammi insieme, uniti da una graffa. Quello sopra (chiave di violino) di solito è per la mano destra; quello sotto (chiave di basso), per la sinistra. Ciò che è allineato in verticale si suona insieme.", "visual": {"kind": "score", "rh": "e''2 c''2", "lh": "c2 g,2", "staff": -1}},
+        {"title": "Il Do centrale nelle due chiavi", "text": "Il Do4 sta proprio tra i due pentagrammi: su un taglio addizionale sotto la chiave di violino o su un taglio addizionale sopra la chiave di basso. I due modi di scriverlo sono lo stesso tasto.", "visual": {"kind": "score", "rh": "c'1 r1", "lh": "r1 c'1", "staff": -1}}
+      ],
+      "quiz": [
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "rh": "a''1", "staff": 0}, "options": ["La5", "Sol5", "Si5"], "answer": 0, "shuffle": true, "explain": "Un taglio addizionale sopra il pentagramma: La5."},
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "rh": "c'1", "staff": 0}, "options": ["Do4", "Re4", "Si3"], "answer": 0, "shuffle": true, "explain": "Un taglio addizionale sotto la chiave di violino: Do4."},
+        {"prompt": "Come si chiama questa nota?", "visual": {"kind": "score", "lh": "e,1", "staff": 1}, "options": ["Mi2", "Sol2", "Do2"], "answer": 0, "shuffle": true, "explain": "Un taglio addizionale sotto la chiave di basso: Mi2."},
+        {"prompt": "Che cosa hanno in comune queste due note?", "visual": {"kind": "score", "rh": "c'1", "lh": "r1 c'1", "staff": -1}, "options": ["Lo stesso tasto", "Tasti diversi, a un'ottava di distanza", "Tasti vicini"], "answer": 0, "shuffle": true, "explain": "Sono entrambe il Do4, lo stesso tasto."},
+        {"prompt": "Quale tasto suona questa nota?", "visual": {"kind": "score", "lh": "c'1", "staff": 1}, "play": [60], "explain": "Taglio addizionale sopra la chiave di basso: Do4."}
+      ]
+    },
+    {
+      "id": "figuras",
+      "title": "Figure e tempi",
+      "summary": "Quanto dura ogni nota",
+      "pages": [
+        {"title": "La pulsazione", "text": "La musica ha una pulsazione costante, come il tic-tac di un orologio: ogni battito è un tempo. Le figure dicono quanti tempi dura ogni nota. Nell'esempio, quattro note da un tempo ciascuna.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 c'' c'' c''", "staff": 0, "below": ["1", "2", "3", "4"]}},
+        {"title": "Semibreve, minima e semiminima", "text": "Semibreve: testa vuota, senza gambo — dura 4 tempi.\nMinima: vuota, con gambo — 2 tempi.\nSemiminima: piena, con gambo — 1 tempo.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''1 c''2 c'' c''4 c'' c'' c''", "staff": 0, "below": ["4 tempi", "2", "2", "1", "1", "1", "1"]}},
+        {"title": "Croma e semicroma", "text": "Croma: una codetta (o una travatura che ne unisce diverse) — mezzo tempo.\nSemicroma: due codette (o due travature) — un quarto di tempo.", "visual": {"kind": "score", "time": "2/4", "showTime": true, "rh": "c''8 c'' c'' c'' c''16 c'' c'' c'' c'' c'' c'' c''", "staff": 0, "below": ["½", "½", "½", "½", "¼", "¼", "¼", "¼", "¼", "¼", "¼", "¼"]}},
+        {"title": "Contare", "text": "Per contare le crome, dividi ogni tempo in due dicendo ad alta voce \"1 e 2 e 3 e 4 e\". Le note cadono sui numeri e sulle \"e\".", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 c''8 c'' c''4 c''8 c''", "staff": 0, "below": ["1", "2", "e", "3", "4", "e"]}}
+      ],
+      "quiz": [
+        {"prompt": "Quanti tempi dura questa nota?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2 r2", "staff": 0}, "options": ["2", "1", "4"], "answer": 0, "shuffle": true, "explain": "Minima: 2 tempi."},
+        {"prompt": "Quanti tempi dura questa nota?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''1", "staff": 0}, "options": ["4", "2", "3"], "answer": 0, "shuffle": true, "explain": "Semibreve: 4 tempi."},
+        {"prompt": "Quanto dura una croma?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''8 r8 r4 r2", "staff": 0}, "options": ["Mezzo tempo", "1 tempo", "Un quarto di tempo"], "answer": 0, "shuffle": true, "explain": "Croma: mezzo tempo."},
+        {"prompt": "Quante crome entrano in una semiminima?", "options": ["2", "4", "1"], "answer": 0, "shuffle": true, "explain": "Semiminima = 1 tempo = 2 crome."},
+        {"prompt": "Quale delle due note dura di più?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2 c''4 r4", "staff": 0, "below": ["1ª", "2ª"]}, "options": ["La 1ª", "La 2ª"], "answer": 0, "explain": "La minima (2 tempi) dura più della semiminima (1)."}
+      ]
+    },
+    {
+      "id": "pausas",
+      "title": "Pause",
+      "summary": "Anche i silenzi hanno una durata",
+      "pages": [
+        {"title": "Anche il silenzio si scrive", "text": "Ogni figura ha una pausa della stessa durata. Durante la pausa non suoni, ma continui a contare i tempi.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r1 r2 r2 r4 r r r", "staff": 0, "below": ["4 tempi", "2", "2", "1", "1", "1", "1"]}},
+        {"title": "Semibreve × minima", "text": "La pausa di semibreve (4 tempi) è appesa sotto la 4ª linea. Quella di minima (2 tempi) è appoggiata sopra la 3ª linea. Per ricordarlo: la semibreve, più \"pesante\", è appesa.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r1 r2 r2", "staff": 0, "below": ["semibreve", "minima", "minima"]}},
+        {"title": "Croma e semicroma", "text": "La pausa di croma (mezzo tempo) ha un uncino. Quella di semicroma (un quarto di tempo) ne ha due.", "visual": {"kind": "score", "time": "2/4", "showTime": true, "rh": "r8 r r r r16 r r r r r r r", "staff": 0, "below": ["½", "½", "½", "½", "¼", "¼", "¼", "¼", "¼", "¼", "¼", "¼"]}},
+        {"title": "In pratica", "text": "Suona sulle note e solleva le dita sulle pause, senza smettere di contare i tempi.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 r c'' r c''2 r2", "staff": 0, "below": ["suona", "—", "suona", "—", "suona", "—"]}}
+      ],
+      "quiz": [
+        {"prompt": "Quanti tempi dura questa pausa?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r4 c''4 c''2", "staff": 0}, "options": ["1 tempo", "2 tempi", "Mezzo tempo"], "answer": 0, "shuffle": true, "explain": "Pausa di semiminima: 1 tempo."},
+        {"prompt": "Quanti tempi dura questa pausa?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r1", "staff": 0}, "options": ["4 tempi", "2 tempi", "1 tempo"], "answer": 0, "shuffle": true, "explain": "Appesa alla 4ª linea: semibreve, 4 tempi."},
+        {"prompt": "Quanti tempi dura questa pausa?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "r2 c''2", "staff": 0}, "options": ["2 tempi", "4 tempi", "1 tempo"], "answer": 0, "shuffle": true, "explain": "Seduta sulla 3ª linea: minima, 2 tempi."},
+        {"prompt": "Che cosa fai quando compare una pausa?", "options": ["Non suonare e continuare a contare", "Aspettare quanto vuoi", "Tenere la nota precedente"], "answer": 0, "shuffle": true, "explain": "Non suoni, ma continui a contare."}
+      ]
+    },
+    {
+      "id": "compasso",
+      "title": "La battuta",
+      "summary": "Stanghette, indicazione di tempo e tempo forte",
+      "pages": [
+        {"title": "Stanghette", "text": "I tempi sono raggruppati in battute, separate da stanghette verticali. La doppia stanghetta, con una linea spessa, segna la fine del brano.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 d'' e'' f'' g''1", "staff": 0}},
+        {"title": "Indicazione di tempo", "text": "I due numeri all'inizio del brano formano l'indicazione di tempo. Quello sopra dice quanti tempi ha ogni battuta. Quello sotto, quale figura vale un tempo (4 = semiminima, 8 = croma). In 4/4: quattro semiminime per battuta.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4 c'' c'' c''", "staff": 0, "below": ["1", "2", "3", "4"]}},
+        {"title": "3/4 e 2/4", "text": "3/4 ha tre tempi per battuta, come un valzer: UNO-due-tre. 2/4 ne ha due, come una marcia. In tutti, il primo tempo della battuta è il più forte.", "visual": {"kind": "score", "time": "3/4", "showTime": true, "rh": "c''4 c'' c'' c'' c'' c''", "staff": 0, "below": ["UNO", "2", "3", "UNO", "2", "3"]}},
+        {"title": "6/8", "text": "6/8 ha sei crome per battuta, raggruppate a tre a tre. Conta 1-2-3 4-5-6, appoggiandoti sull'1 e sul 4.", "visual": {"kind": "score", "time": "6/8", "showTime": true, "rh": "c''8 c'' c'' c'' c'' c''", "staff": 0, "below": ["1", "2", "3", "4", "5", "6"]}}
+      ],
+      "quiz": [
+        {"prompt": "In un tempo di 3/4, quanti tempi entrano in ogni battuta?", "options": ["3", "4", "2"], "answer": 0, "shuffle": true, "explain": "Il numero in alto: 3."},
+        {"prompt": "In 4/4, quale figura vale un tempo?", "options": ["Semiminima", "Minima", "Croma"], "answer": 0, "shuffle": true, "explain": "Il 4 in basso indica la semiminima."},
+        {"prompt": "Questa battuta di 4/4 è incompleta. Quale figura manca per completarla?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2 c''4", "staff": 0}, "options": ["Una semiminima", "Una minima", "Una croma"], "answer": 0, "shuffle": true, "explain": "2 + 1 = 3 tempi; manca 1 tempo: una semiminima."},
+        {"prompt": "Quante crome entrano in una battuta di 6/8?", "options": ["6", "8", "3"], "answer": 0, "shuffle": true, "explain": "6 in alto, croma (8) in basso."},
+        {"prompt": "Qual è il tempo più forte di una battuta?", "options": ["Il 1º", "L'ultimo", "Tutti uguali"], "answer": 0, "shuffle": true, "explain": "Il primo tempo è il più forte."}
+      ]
+    },
+    {
+      "id": "ponto-ligadura",
+      "title": "Punto e legatura",
+      "summary": "Note che durano di più",
+      "pages": [
+        {"title": "Punto di valore", "text": "Un punto dopo la nota aggiunge metà del suo valore. Minima puntata: 2 + 1 = 3 tempi. Semiminima puntata: 1 + ½ = un tempo e mezzo.", "visual": {"kind": "score", "time": "3/4", "showTime": true, "rh": "c''2. c''4. c''8 c''4", "staff": 0, "below": ["3 tempi", "1½", "½", "1"]}},
+        {"title": "Legatura di valore", "text": "Una curva che unisce due note uguali (lo stesso tasto) somma le durate: suona solo la prima e tieni il tasto per entrambe. Serve, per esempio, a far attraversare a una nota la stanghetta.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2 c''2~ c''2 c''2", "staff": 0, "below": ["2", "tieni", "(+2)", "2"]}},
+        {"title": "Legatura di frase", "text": "Una curva sopra note diverse non aggiunge tempo: chiede di suonare legato, passando da una nota all'altra senza silenzio tra loro.", "visual": null}
+      ],
+      "quiz": [
+        {"prompt": "Quanti tempi dura una minima puntata?", "visual": {"kind": "score", "time": "3/4", "showTime": true, "rh": "c''2.", "staff": 0}, "options": ["3", "2", "2½"], "answer": 0, "shuffle": true, "explain": "2 + 1 = 3."},
+        {"prompt": "Quanti tempi dura una semiminima puntata?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''4. c''8 r2", "staff": 0}, "options": ["Un tempo e mezzo", "2 tempi", "1 tempo"], "answer": 0, "shuffle": true, "explain": "1 + ½."},
+        {"prompt": "Quante volte premi il tasto in queste note legate?", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "c''2~ c''2", "staff": 0}, "options": ["1", "2", "4"], "answer": 0, "shuffle": true, "explain": "Legatura di valore: suoni una volta e tieni."},
+        {"prompt": "Che cosa significa una curva sopra note diverse?", "options": ["Suonare legato", "Sommare le durate", "Ripetere le note"], "answer": 0, "shuffle": true, "explain": "È la legatura di frase."}
+      ]
+    },
+    {
+      "id": "acidentes",
+      "title": "Diesis, bemolle e bequadro",
+      "summary": "Tasti neri e semitono",
+      "pages": [
+        {"title": "Diesis ♯", "text": "Il diesis (♯) alza di un semitono: usa il tasto subito a destra, quasi sempre nero. Fa♯ è il nero subito a destra del Fa.", "visual": {"kind": "score", "rh": "f'2 fis'2", "staff": 0, "below": ["Fa", "Fa♯"]}},
+        {"title": "Bemolle ♭", "text": "Il bemolle (♭) abbassa di un semitono: usa il tasto subito a sinistra. Si♭ è il nero subito a sinistra del Si.", "visual": {"kind": "score", "rh": "b'2 bes'2", "staff": 0, "below": ["Si", "Si♭"]}},
+        {"title": "Bequadro ♮", "text": "Il bequadro (♮) annulla il diesis o il bemolle: la nota torna naturale (il tasto bianco).", "visual": {"kind": "score", "rh": "fis'2 f'2", "staff": 0, "below": ["Fa♯", "Fa"]}},
+        {"title": "Vale fino alla stanghetta", "text": "Un diesis o un bemolle scritto accanto alla nota vale fino alla fine di quella battuta. Nella battuta seguente, la nota torna normale.", "visual": {"kind": "score", "time": "4/4", "showTime": true, "rh": "fis'4 g' fis' g' f'1", "staff": 0, "below": ["Fa♯", "Sol", "Fa♯", "Sol", "Fa"]}},
+        {"title": "Un tasto, due nomi", "text": "Ogni tasto nero ha due nomi: Do♯ è lo stesso tasto di Re♭, e Fa♯ lo stesso di Sol♭. Lo spartito usa il nome che ha più senso nella musica.", "visual": {"kind": "keys", "low": 60, "high": 71, "marked": [61, 66], "labels": {"61": "Do♯", "63": "Mi♭", "66": "Fa♯", "68": "Sol♯", "70": "Si♭"}}}
+      ],
+      "quiz": [
+        {"prompt": "Quale tasto suona questa nota?", "visual": {"kind": "score", "rh": "fis'1", "staff": 0}, "play": [66], "explain": "Fa♯4: il nero subito a destra del Fa4."},
+        {"prompt": "Quale tasto suona questa nota?", "visual": {"kind": "score", "lh": "bes1", "staff": 1}, "play": [58], "explain": "Si♭3: il nero subito a sinistra del Si3."},
+        {"prompt": "Quale tasto suona questa nota?", "visual": {"kind": "score", "rh": "ees''1", "staff": 0}, "play": [75], "explain": "Mi♭5: il nero subito a sinistra del Mi5."},
+        {"prompt": "Che cosa fa il bequadro alla nota?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": ["bequadro"]}, "options": ["Torna alla nota naturale", "Alza di un semitono", "Abbassa di un semitono"], "answer": 0, "shuffle": true, "explain": "Annulla ♯ o ♭."},
+        {"prompt": "Quale nota usa lo stesso tasto del Do♯?", "options": ["Re♭", "Si♭", "Do♭"], "answer": 0, "shuffle": true, "explain": "Un semitono sopra il Do equivale a un semitono sotto il Re."}
+      ]
+    },
+    {
+      "id": "armadura",
+      "title": "Armatura di chiave",
+      "summary": "Diesis e bemolli fissi del brano",
+      "pages": [
+        {"title": "Alterazioni fisse", "text": "I diesis o i bemolle subito dopo la chiave formano l'armatura. Valgono per tutto il brano, in tutte le ottave. Qui ogni Fa è Fa♯, anche senza il ♯ accanto alla nota.", "visual": {"kind": "score", "fifths": 1, "rh": "g'4 a' b' c'' d'' e'' fis'' g''", "staff": 0, "below": ["Sol", "La", "Si", "Do", "Re", "Mi", "Fa♯", "Sol"]}},
+        {"title": "Leggi prima l'armatura", "text": "Prima di iniziare a suonare, guarda l'armatura e ricorda quali note cambiano. Con un ♭ sulla linea del Si, ogni Si diventa Si♭.", "visual": {"kind": "score", "fifths": -1, "rh": "f'4 g' a' bes' c'' d'' e'' f''", "staff": 0, "below": ["Fa", "Sol", "La", "Si♭", "Do", "Re", "Mi", "Fa"]}},
+        {"title": "Ordine delle alterazioni", "text": "I diesis entrano sempre in quest'ordine: Fa, Do, Sol, Re, La, Mi, Si. I bemolle, nell'ordine contrario: Si, Mi, La, Re, Sol, Do, Fa.\nSenza nessuno: Do maggiore (o La minore). Con 1♯: Sol maggiore. Con 1♭: Fa maggiore.", "visual": {"kind": "score", "fifths": 7, "rh": "r1", "staff": 0}}
+      ],
+      "quiz": [
+        {"prompt": "Con questa armatura, quale nota suona?", "visual": {"kind": "score", "fifths": -1, "rh": "bes'1", "staff": 0}, "options": ["Si♭", "Si", "Do"], "answer": 0, "shuffle": true, "explain": "L'armatura ha il Si♭."},
+        {"prompt": "Con questa armatura, quale tasto suona questa nota?", "visual": {"kind": "score", "fifths": 1, "rh": "fis''1", "staff": 0}, "play": [78], "explain": "L'armatura trasforma il Fa in Fa♯: Fa♯5."},
+        {"prompt": "Un ♯ nell'armatura, sulla linea del Fa, vale per quali Fa?", "visual": {"kind": "score", "fifths": 1, "rh": "r1", "staff": 0}, "options": ["Tutti i Fa del brano", "Solo il primo Fa", "Solo i Fa su quella linea"], "answer": 0, "shuffle": true, "explain": "Vale per tutti i Fa, in tutte le ottave."},
+        {"prompt": "Qual è il primo diesis che compare in un'armatura?", "options": ["Fa♯", "Do♯", "Sol♯"], "answer": 0, "shuffle": true, "explain": "L'ordine è Fa, Do, Sol, Re, La, Mi, Si."}
+      ]
+    },
+    {
+      "id": "andamento-dinamica",
+      "title": "Tempo e dinamica",
+      "summary": "Velocità e volume",
+      "pages": [
+        {"title": "Tempo", "text": "L'andamento è la velocità della musica. Può essere un numero (♩ = 100: cento semiminime al minuto, come sul metronomo) o parole italiane come Adagio (lento), Moderato e Allegro (veloce).", "visual": {"kind": "glyphs", "glyphs": ["texto:Adagio", "texto:Andante", "texto:Moderato", "texto:Allegro", "texto:Presto"], "captions": ["lento", "a passo d'uomo", "moderato", "veloce", "molto veloce"]}},
+        {"title": "Dinamica", "text": "La dinamica è il volume: p (piano) è leggero e f (forte) è forte; pp e ff, ancora di più. Per suonare piano, premi i tasti più leggermente; per suonare forte, con più decisione.", "visual": {"kind": "glyphs", "glyphs": ["", "", "", "", "", ""], "captions": ["molto piano", "piano", "mezzo piano", "mezzo forte", "forte", "molto forte"]}},
+        {"title": "Crescendo e diminuendo", "text": "Il segno che si apre chiede di aumentare il volume poco a poco (crescendo). Quello che si chiude chiede di diminuirlo poco a poco (diminuendo). A volte sono scritti: cresc. e dim.", "visual": {"kind": "glyphs", "glyphs": ["<cresc>", "<dim>"], "captions": ["crescendo", "diminuendo"]}},
+        {"title": "Cambi di tempo", "text": "rit. o rall.: rallenta poco a poco. accel.: accelera poco a poco. a tempo: torna all'andamento di prima. La corona chiede di tenere la nota più del suo valore.", "visual": {"kind": "glyphs", "glyphs": ["texto:rit.", "texto:accel.", "texto:a tempo", ""], "captions": ["rallenta", "accelera", "torna", "corona"]}}
+      ],
+      "quiz": [
+        {"prompt": "Che cosa significa questo segno?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": [""]}, "options": ["Forte", "Piano", "Veloce"], "answer": 0, "shuffle": true, "explain": "f = forte."},
+        {"prompt": "Che cosa significa questo segno?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": [""]}, "options": ["Molto piano", "Molto forte", "Pausa"], "answer": 0, "shuffle": true, "explain": "pp = pianissimo."},
+        {"prompt": "Che cosa significa Allegro?", "options": ["Veloce", "Lento", "Forte"], "answer": 0, "shuffle": true, "explain": "Allegro è veloce e vivace."},
+        {"prompt": "Che cosa chiede questo segno?", "visual": {"kind": "glyphs", "glyphs": ["<cresc>"], "captions": [""]}, "options": ["Aumentare il volume poco a poco", "Diminuire il volume poco a poco", "Accelerare"], "answer": 0, "shuffle": true, "explain": "È il crescendo."},
+        {"prompt": "Che cosa chiede la corona?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": [""]}, "options": ["Tenere la nota un po' di più", "Suonare corto", "Ripetere"], "answer": 0, "shuffle": true, "explain": "Tieni la nota oltre il suo valore."}
+      ]
+    },
+    {
+      "id": "articulacao-repeticao",
+      "title": "Articolazioni e ritornelli",
+      "summary": "Come suonare ogni nota e dove andare",
+      "pages": [
+        {"title": "Articolazioni", "text": "Piccoli segni accanto alla nota dicono come suonarla:\n• Staccato (punto): corta e staccata.\n• Tenuto (trattino): tieni tutto il valore.\n• Accento (>): metti in risalto la nota, più forte.", "visual": {"kind": "glyphs", "glyphs": ["", "", ""], "captions": ["staccato", "tenuto", "accento"]}},
+        {"title": "Ritornello", "text": "Le stanghette con due punti segnano un passaggio da ripetere. Quando arrivi alla stanghetta finale, torna a quella iniziale (o all'inizio del brano, se non c'è) e suona il passaggio ancora una volta.", "visual": {"kind": "glyphs", "onStaff": true, "glyphs": ["", ""], "captions": ["inizio", "torna e ripeti"]}},
+        {"title": "Prima e seconda volta", "text": "In un passaggio ripetuto con caselle, la casella 1 si suona solo la prima volta. Alla ripetizione, salta la casella 1 e vai diretto alla casella 2.", "visual": {"kind": "glyphs", "glyphs": ["texto:1.", "texto:2."], "captions": ["1ª volta", "2ª volta"]}},
+        {"title": "D.C., D.S., Fine e Coda", "text": "• D.C. (da capo): torna all'inizio.\n• D.S. (dal segno): torna al segno.\n• Fine: è la fine.\n• Coda: salta alla sezione finale indicata.\nNei brani dell'app i ritornelli sono già scritti per esteso; negli spartiti stampati troverai questi segni.", "visual": {"kind": "glyphs", "glyphs": ["texto:D.C.", "", "texto:Fine", ""], "captions": ["dall'inizio", "segno", "fine", "coda"]}}
+      ],
+      "quiz": [
+        {"prompt": "Come si suona una nota con lo staccato?", "visual": {"kind": "glyphs", "glyphs": [""], "captions": [""]}, "options": ["Breve e leggera", "Molto lunga", "Più piano"], "answer": 0, "shuffle": true, "explain": "Punto = breve e leggera."},
+        {"prompt": "Che cosa fai quando arrivi a questo segno?", "visual": {"kind": "glyphs", "onStaff": true, "glyphs": [""], "captions": [""]}, "options": ["Tornare indietro e ripetere il passaggio", "Fermare il brano", "Suonare più veloce"], "answer": 0, "shuffle": true, "explain": "Fine del ritornello: torna indietro e ripeti."},
+        {"prompt": "Che cosa significa D.C.?", "options": ["Tornare all'inizio", "Andare alla fine", "Suonare più forte"], "answer": 0, "shuffle": true, "explain": "Da capo: dall'inizio."},
+        {"prompt": "Alla seconda volta del ritornello, quale casella suoni?", "options": ["La casella 2", "La casella 1", "Tutte e due"], "answer": 0, "shuffle": true, "explain": "La seconda volta salti la casella 1 e vai alla casella 2."}
+      ]
+    },
+    {
+      "id": "dedilhado",
+      "title": "Diteggiatura e posizione delle mani",
+      "summary": "Numeri delle dita e posizione di Do",
+      "pages": [
+        {"title": "Numeri delle dita", "text": "In entrambe le mani, le dita hanno numeri:\npollice = 1, indice = 2, medio = 3, anulare = 4, mignolo = 5.", "visual": {"kind": "glyphs", "glyphs": ["texto:1", "texto:2", "texto:3", "texto:4", "texto:5"], "captions": ["pollice", "indice", "medio", "anulare", "mignolo"]}},
+        {"title": "Posizione di Do", "text": "Mano destra: pollice (1) sul Do4 e un dito su ogni tasto bianco, fino al mignolo (5) sul Sol4.\nMano sinistra: mignolo (5) sul Do3 e un dito su ogni tasto bianco, fino al pollice (1) sul Sol3.", "visual": {"kind": "keys", "low": 48, "high": 67, "marked": [48, 60], "labels": {"48": "5", "50": "4", "52": "3", "53": "2", "55": "1", "60": "1", "62": "2", "64": "3", "65": "4", "67": "5"}}},
+        {"title": "Sullo spartito", "text": "I numeri accanto alle note dicono quale dito usare. Seguire la diteggiatura evita di restare senza dita a metà frase. Nelle scale, il pollice passa sotto le altre dita perché la mano possa continuare.", "visual": {"kind": "score", "rh": "c'4-1 d'-2 e'-3 f'-1 g'-2 a'-3 b'-4 c''-5", "staff": 0}}
+      ],
+      "quiz": [
+        {"prompt": "Quale dito è il numero 1?", "options": ["Pollice", "Mignolo", "Indice"], "answer": 0, "shuffle": true, "explain": "Il pollice è l'1, in tutte e due le mani."},
+        {"prompt": "Con la mano destra in posizione di Do (pollice sul Do4), quale tasto suona il dito 3?", "play": [64], "explain": "Pollice sul Do4: il dito 3 sta sul Mi4."},
+        {"prompt": "Nella scala di Do maggiore con la mano destra, quale dito suona il Fa, subito dopo il dito 3 sul Mi?", "visual": {"kind": "score", "rh": "c'4-1 d'-2 e'-3 f' g' a' b' c''", "staff": 0}, "options": ["1", "4", "5"], "answer": 0, "shuffle": true, "explain": "Il pollice passa sotto: Fa con il dito 1."},
+        {"prompt": "Quale dito è il numero 5?", "options": ["Mignolo", "Anulare", "Pollice"], "answer": 0, "shuffle": true, "explain": "Il mignolo è il 5."}
+      ]
+    }
+  ]
+}
