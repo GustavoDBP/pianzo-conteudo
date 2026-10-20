@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b197",
+  "name": "Versão 1.0.97",
+  "body": "Conteúdo, notas das versões e a política no repositório público pianzo-conteudo\n\nO repositório do código pode ficar privado: o que o app baixa vai para o GustavoDBP/pianzo-conteudo (público),\ngerado daqui por tools/conteudo/publicar.sh. Músicas, lições e a Política de Privacidade (GitHub Pages) pelo\nworkflow conteudo.yml; a nota de cada versão vai para o releases.json pelo workflow de versão, e o app lê as\nnotas de lá. A distribuição fica só pela Google Play: sai o sabor github (APK dos Releases e a atualização\nautomática por fora da loja)."
+ },
+ {
   "tag_name": "b196",
   "name": "Versão 1.0.96",
   "body": "Política de Privacidade (GitHub Pages) e o link em Configurações → Sobre\n\ndocs/privacidade: o que o app coleta (conta, progresso e moedas no Firebase; assinatura pela Google Play;\nconteúdo do GitHub), o que fica só no aparelho e como excluir a conta (no app ou por e-mail), em português e\ninglês. Publicada pelo GitHub Pages em gustavodbp.github.io/pianzo/privacidade/."
@@ -293,10 +298,5 @@
   "tag_name": "b138",
   "name": "Versão 1.0.38",
   "body": "Merge pull request #3 from GustavoDBP/ccr-679babaf-la32o2\n\nConta sem rolar e tela de login na primeira abertura"
- },
- {
-  "tag_name": "b137",
-  "name": "Versão 1.0.37",
-  "body": "Merge pull request #2 from GustavoDBP/ccr-679babaf-la32o2\n\nConta com visual novo e convite para entrar na primeira abertura"
  }
 ]
