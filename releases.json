@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b200",
+  "name": "Versão 1.0.100",
+  "body": "Merge pull request #17 from GustavoDBP/claude/great-goldberg-li4wcf\n\nMúsicas só pelo repositório de conteúdo: o app não traz nenhuma"
+ },
+ {
   "tag_name": "b199",
   "name": "Versão 1.0.99",
   "body": "Merge pull request #16 from GustavoDBP/ccr-d11fd2d7-3jp45u\n\nAtualização em modal e pedido de avaliação na Google Play"
@@ -293,10 +298,5 @@
   "tag_name": "b141",
   "name": "Versão 1.0.41",
   "body": "Conta: excluir sai do cartão e fica como link discreto na confirmação de sair"
- },
- {
-  "tag_name": "b140",
-  "name": "Versão 1.0.40",
-  "body": "Conta: \"‹\" e título presos no canto de cima à esquerda, como em Configurações"
  }
 ]
