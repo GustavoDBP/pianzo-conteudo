@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b204",
+  "name": "Versão 1.0.104",
+  "body": "Merge pull request #22 from GustavoDBP/ccr-61a7bb21-egw44y\n\nPlano com desconto em destaque: preço cheio riscado e preço de entrada maior"
+ },
+ {
   "tag_name": "b203",
   "name": "Versão 1.0.103",
   "body": "Merge pull request #21 from GustavoDBP/claude/great-goldberg-li4wcf\n\nAssinatura: cartões dos planos lado a lado e mais altos"
@@ -293,10 +298,5 @@
   "tag_name": "b145",
   "name": "Versão 1.0.45",
   "body": "Merge pull request #6 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nTelas inicial e de músicas mais limpas, com moedas e perfil no canto"
- },
- {
-  "tag_name": "b144",
-  "name": "Versão 1.0.44",
-  "body": "Merge pull request #5 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nPrévia em todas as músicas, com desbloqueio nas bloqueadas"
  }
 ]
