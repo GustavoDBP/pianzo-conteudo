@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b201",
+  "name": "Versão 1.0.101",
+  "body": "Merge pull request #18 from GustavoDBP/claude/great-goldberg-li4wcf\n\nAssinatura: um produto pianzo_premium com os planos mensal e anual"
+ },
+ {
   "tag_name": "b200",
   "name": "Versão 1.0.100",
   "body": "Merge pull request #17 from GustavoDBP/claude/great-goldberg-li4wcf\n\nMúsicas só pelo repositório de conteúdo: o app não traz nenhuma"
@@ -293,10 +298,5 @@
   "tag_name": "b142",
   "name": "Versão 1.0.42",
   "body": "Conta sem conta: tela limpa, em dois passos\n\n- Uma coluna só, centralizada: \"Salve seu progresso\", Continuar com o Google, Entrar com e-mail e (na\n  abertura) Continuar sem conta\n- E-mail e senha só aparecem ao escolher e-mail, com \"‹\" para voltar; criar conta e esqueci a senha\n  viram links embaixo do botão\n- Na abertura, sem barra no topo; fundo mais calmo atrás\n- Campo de senha com a mesma fonte do resto (não monoespaçada)"
- },
- {
-  "tag_name": "b141",
-  "name": "Versão 1.0.41",
-  "body": "Conta: excluir sai do cartão e fica como link discreto na confirmação de sair"
  }
 ]
