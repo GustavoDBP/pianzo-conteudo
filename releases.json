@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b206",
+  "name": "Versão 1.0.106",
+  "body": "Merge pull request #24 from GustavoDBP/ccr-61a7bb21-egw44y\n\nPublicar cada branch na sua faixa da Google Play"
+ },
+ {
   "tag_name": "b205",
   "name": "Versão 1.0.105",
   "body": "Merge pull request #23 from GustavoDBP/ccr-61a7bb21-egw44y\n\nPremium de cortesia por conta, dado à mão no Firestore"
@@ -293,10 +298,5 @@
   "tag_name": "b147",
   "name": "Versão 1.0.47",
   "body": "Merge pull request #8 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nPlano só no perfil, mais chamativo; convite Premium e atualização no topo"
- },
- {
-  "tag_name": "b146",
-  "name": "Versão 1.0.46",
-  "body": "Merge pull request #7 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nPerfil abre a conta, página de assinatura e modal da música redesenhado"
  }
 ]
