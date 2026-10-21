@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b205",
+  "name": "Versão 1.0.105",
+  "body": "Merge pull request #23 from GustavoDBP/ccr-61a7bb21-egw44y\n\nPremium de cortesia por conta, dado à mão no Firestore"
+ },
+ {
   "tag_name": "b204",
   "name": "Versão 1.0.104",
   "body": "Merge pull request #22 from GustavoDBP/ccr-61a7bb21-egw44y\n\nPlano com desconto em destaque: preço cheio riscado e preço de entrada maior"
@@ -293,10 +298,5 @@
   "tag_name": "b146",
   "name": "Versão 1.0.46",
   "body": "Merge pull request #7 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nPerfil abre a conta, página de assinatura e modal da música redesenhado"
- },
- {
-  "tag_name": "b145",
-  "name": "Versão 1.0.45",
-  "body": "Merge pull request #6 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nTelas inicial e de músicas mais limpas, com moedas e perfil no canto"
  }
 ]
