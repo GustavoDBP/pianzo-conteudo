@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b203",
+  "name": "Versão 1.0.103",
+  "body": "Merge pull request #21 from GustavoDBP/claude/great-goldberg-li4wcf\n\nAssinatura: cartões dos planos lado a lado e mais altos"
+ },
+ {
   "tag_name": "b202",
   "name": "Versão 1.0.102",
   "body": "Merge pull request #19 from GustavoDBP/claude/great-goldberg-li4wcf\n\nAssinatura com os planos e ofertas da Play Console"
@@ -293,10 +298,5 @@
   "tag_name": "b144",
   "name": "Versão 1.0.44",
   "body": "Merge pull request #5 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nPrévia em todas as músicas, com desbloqueio nas bloqueadas"
- },
- {
-  "tag_name": "b143",
-  "name": "Versão 1.0.43",
-  "body": "Merge pull request #4 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nMoedas, estrelas por música e plano Premium (sem cobrança)"
  }
 ]
