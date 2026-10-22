@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b211",
+  "name": "Versão 1.0.111",
+  "body": "Merge pull request #28 from GustavoDBP/claude/optimistic-curie-ejrhqp\n\nSite pianzo.com.br com inscrição de testadores"
+ },
+ {
   "tag_name": "b206",
   "name": "Versão 1.0.106",
   "body": "Merge pull request #24 from GustavoDBP/ccr-61a7bb21-egw44y\n\nPublicar cada branch na sua faixa da Google Play"
@@ -293,10 +298,5 @@
   "tag_name": "b148",
   "name": "Versão 1.0.48",
   "body": "Merge pull request #9 from GustavoDBP/ccr-0230e9ec-3fdh2h\n\nNovo nome do app: Pianzo"
- },
- {
-  "tag_name": "b147",
-  "name": "Versão 1.0.47",
-  "body": "Merge pull request #8 from GustavoDBP/claude/sheet-music-coin-gamification-mz0ypk\n\nPlano só no perfil, mais chamativo; convite Premium e atualização no topo"
  }
 ]
