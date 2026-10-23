@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b215",
+  "name": "Versão 1.0.115",
+  "body": "Biblioteca com 286 músicas, Músicas da comunidade e Premium conferido no servidor (#32)\n\nBiblioteca com 286 músicas, Músicas da comunidade e Premium conferido no servidor"
+ },
+ {
   "tag_name": "b213",
   "name": "Versão 1.0.113",
   "body": "Merge pull request #30 from GustavoDBP/ccr-52a0f7b1-tc3ye9\n\nEscolher a saída do som e corrigir som mudo com o teclado USB"
@@ -293,10 +298,5 @@
   "tag_name": "b150",
   "name": "Versão 1.0.50",
   "body": "Escolha do idioma com confirmação\n\nTocar num idioma só marca e mostra a tela nele; vale ao tocar em Confirmar.\nSaindo sem confirmar, os textos voltam ao idioma guardado."
- },
- {
-  "tag_name": "b149",
-  "name": "Versão 1.0.49",
-  "body": "Merge pull request #10 from GustavoDBP/ccr-0230e9ec-3fdh2h\n\nTraduções (pt, en, es, it) e identidade visual do Pianzo"
  }
 ]
