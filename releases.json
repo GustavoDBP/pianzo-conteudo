@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b218",
+  "name": "Versão 1.0.118",
+  "body": "Músicas refeitas e Comunidade como seção própria\n\nMúsicas: sem a coluna da esquerda. Uma barra de filtros só — o nível\n(Todas, Iniciante, Intermediário, Avançado) e, à direita, Favoritas e\nCompositor, que se somam. Lista em seções com contagem (Continuar em\ndestaque, Populares e os níveis; num nível, Populares e Clássicas),\n3 colunas em telas largas, \"Limpar filtros\" quando nada aparece e a\nbusca em todas as músicas (a barra apaga enquanto busca).\n\nComunidade: sai da tela de músicas e vira um cartão da tela inicial\n(✦ Premium no plano padrão). Duas abas, como a Escola: Explorar (ordem\ne busca) e Minhas músicas (Importar arquivo e Compor no teclado em\ncartões grandes, os rascunhos e as publicadas)."
+ },
+ {
   "tag_name": "b215",
   "name": "Versão 1.0.115",
   "body": "Biblioteca com 286 músicas, Músicas da comunidade e Premium conferido no servidor (#32)\n\nBiblioteca com 286 músicas, Músicas da comunidade e Premium conferido no servidor"
@@ -293,10 +298,5 @@
   "tag_name": "b151",
   "name": "Versão 1.0.51",
   "body": "Configurações: Conta e Idioma como atalhos lado a lado; ícone do globo\n\nOs dois cartões viram botões inteiros (ícone, título, valor atual e ›), diferentes\ndas seções de ajustes. O ícone do idioma era desenhado como ♫: agora é o globo."
- },
- {
-  "tag_name": "b150",
-  "name": "Versão 1.0.50",
-  "body": "Escolha do idioma com confirmação\n\nTocar num idioma só marca e mostra a tela nele; vale ao tocar em Confirmar.\nSaindo sem confirmar, os textos voltam ao idioma guardado."
  }
 ]
