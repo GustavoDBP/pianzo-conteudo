@@ -37,7 +37,9 @@ coleta, como usa, com quem compartilha e como você pode pedir que sejam apagado
 <ul>
   <li>O app funciona sem conta: sem entrar, seu progresso fica só no aparelho.</li>
   <li>Com uma conta, guardamos seu progresso na nuvem para você não perdê-lo e usá-lo em outros aparelhos.</li>
-  <li>Não há anúncios, não vendemos dados e não usamos ferramentas de análise ou rastreamento.</li>
+  <li>Não há anúncios e não vendemos dados. Para melhorar o app, usamos o Google Analytics para Firebase (como o app
+    é usado) e o Firebase Crashlytics (relatórios de erro), sem o ID de publicidade. Você pode desligar os dois em
+    ⚙ Configurações → Privacidade.</li>
 </ul>
 
 <h2>Dados que coletamos</h2>
@@ -48,8 +50,28 @@ coleta, como usa, com quem compartilha e como você pode pedir que sejam apagado
   <li><strong>Progresso</strong> (só com conta): histórico de prática (lições, músicas tocadas, acertos, tempos e
     estatísticas por nota), níveis, conquistas, moedas, músicas liberadas, algumas preferências do app e o modelo
     do aparelho que sincronizou por último.</li>
-  <li><strong>Assinatura</strong>: a compra é feita pela Google Play. Recebemos apenas a confirmação de que há uma
-    assinatura ativa; não temos acesso aos seus dados de pagamento.</li>
+  <li><strong>Assinatura</strong>: a compra é feita pela Google Play. Recebemos a confirmação de que há uma
+    assinatura ativa, o plano escolhido, se a renovação automática está ligada e o identificador da compra; não
+    temos acesso aos seus dados de pagamento.</li>
+  <li><strong>Dados de uso</strong> (Google Analytics para Firebase, se a opção estiver ligada): o que você faz no
+    app (telas abertas; aulas, treinos e músicas começados e terminados, com acertos, tempos e níveis; ajustes;
+    se toca num teclado USB, Bluetooth ou no da tela, e o nome do teclado; o uso das moedas e da tela de
+    assinatura), além de informações do aparelho e do app (modelo, versão do Android, idioma, versão do app) e de
+    um identificador do app instalado (ID de instância do Firebase). O Google deduz a região aproximada (país,
+    cidade) pelo endereço IP, que não fica guardado. Não coletamos o ID de publicidade. Com uma conta, esses dados
+    ficam ligados ao identificador da conta. Nunca enviamos o que você digita (como o texto de uma busca).</li>
+  <li><strong>Relatórios de erro</strong> (Firebase Crashlytics, se a opção estiver ligada): quando o app fecha com
+    erro ou algo falha, o registro técnico do erro, o modelo e o estado do aparelho (memória, espaço livre,
+    orientação), a versão do app, a tela e o treino que estavam abertos e os últimos passos no app.</li>
+  <li><strong>Resumo da conta</strong> (só com conta): junto do progresso, guardamos um resumo para entender como o
+    app é usado: versão do app, modelo do aparelho, idioma, nível, aulas, músicas, moedas, plano e as suas escolhas
+    de privacidade. Com os dados de uso ligados, também a versão do Android, o idioma, o país e o fuso horário do
+    aparelho, o tamanho da tela, a memória, a loja que instalou o app e contagens de uso (quantas vezes abriu,
+    tempo de uso, treinos feitos, nome do teclado). Desligando os dados de uso, essa parte sai do resumo na
+    sincronização seguinte.</li>
+  <li><strong>E-mails de novidades</strong> (só se você aceitar): a opção “Receber novidades por e-mail” começa
+    desligada. Se você ligar, guardamos a escolha e a data e podemos mandar novidades do app para o e-mail da
+    conta. Para parar, desligue a opção ou peça pelo e-mail abaixo.</li>
 </ul>
 
 <h2 id="testadores">Inscrição de testadores (site)</h2>
@@ -62,20 +84,35 @@ site não usa cookies, anúncios nem ferramentas de análise.</p>
 <h2>Dados que ficam só no aparelho</h2>
 <ul>
   <li>As notas tocadas no teclado (MIDI por USB ou Bluetooth) e no teclado da tela são processadas no próprio
-    aparelho e não são enviadas.</li>
+    aparelho. As notas em si não são enviadas; os dados de uso levam só totais (por exemplo, quantas notas e
+    quantos acertos numa música).</li>
   <li>A permissão de localização pedida no Android 11 e anteriores serve só para encontrar teclados Bluetooth (uma
     exigência do Android); o app não lê nem guarda sua localização.</li>
-  <li>Se o app fechar com erro, o texto do erro fica guardado no aparelho e só é enviado se você escolher
-    compartilhá-lo.</li>
+  <li>Se o app fechar com erro, além do relatório do Crashlytics (se a opção estiver ligada), o texto completo do
+    erro fica guardado no aparelho e só é enviado se você escolher compartilhá-lo.</li>
 </ul>
 
 <h2>Como usamos os dados</h2>
 <p>Para entrar na sua conta, guardar e sincronizar seu progresso entre aparelhos, liberar o Premium enquanto a
-assinatura estiver ativa e responder quando você entrar em contato. Não usamos seus dados para publicidade.</p>
+assinatura estiver ativa e responder quando você entrar em contato. Os dados de uso, os relatórios de erro e o
+resumo da conta servem para entender como o app é usado e o que melhorar (quais aulas e músicas funcionam, onde as
+pessoas travam, que erros corrigir). Os e-mails de novidades só vão para quem aceitou. Não usamos seus dados para
+publicidade.</p>
+
+<h2 id="dados-de-uso">Como desligar os dados de uso e os relatórios de erro</h2>
+<p>Em ⚙ Configurações → Privacidade, desligue “Enviar dados de uso e erros”. O app para na hora de mandar dados
+de uso e relatórios de erro, e o resumo da conta deixa de levar (e apaga) os dados do aparelho e de uso. O que já
+foi enviado segue os prazos abaixo; para apagar antes, peça pelo e-mail acima.</p>
 
 <h2>Com quem compartilhamos</h2>
 <ul>
-  <li><strong>Google Firebase</strong> (Authentication e Cloud Firestore): guarda a conta e o progresso.
+  <li><strong>Google Firebase</strong> (Authentication e Cloud Firestore): guarda a conta, o progresso e o resumo
+    da conta. <a href="https://firebase.google.com/support/privacy">Privacidade do Firebase</a>.</li>
+  <li><strong>Google Analytics para Firebase</strong>: recebe os dados de uso.
+    <a href="https://firebase.google.com/support/privacy">Privacidade do Firebase</a> e
+    <a href="https://policies.google.com/technologies/partner-sites">como o Google usa os dados dos apps que usam
+    seus serviços</a>.</li>
+  <li><strong>Firebase Crashlytics</strong>: recebe os relatórios de erro.
     <a href="https://firebase.google.com/support/privacy">Privacidade do Firebase</a>.</li>
   <li><strong>Google Play</strong>: compras, assinaturas e atualizações do app.
     <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</li>
@@ -86,15 +123,23 @@ assinatura estiver ativa e responder quando você entrar em contato. Não usamos
 <p>Não vendemos nem alugamos dados. Só compartilharíamos dados além disso se a lei exigisse.</p>
 
 <h2>Segurança</h2>
-<p>Os dados vão criptografados (HTTPS) e, na nuvem, cada conta só lê e grava o próprio progresso.</p>
+<p>Os dados vão criptografados (HTTPS) e, na nuvem, cada conta só lê e grava o próprio progresso. Os dados de uso
+e os relatórios de erro só podem ser vistos pelo desenvolvedor, no console do Firebase.</p>
 
 <h2>Por quanto tempo guardamos</h2>
-<p>Enquanto a conta existir. Ao excluir a conta, a conta e o progresso na nuvem são apagados na hora.</p>
+<ul>
+  <li><strong>Conta, progresso e resumo da conta</strong>: enquanto a conta existir. Ao excluir a conta, eles são
+    apagados na hora.</li>
+  <li><strong>Dados de uso</strong>: até 14 meses, depois são apagados. Relatórios com totais, que não identificam
+    ninguém, podem ficar.</li>
+  <li><strong>Relatórios de erro</strong>: 90 dias.</li>
+</ul>
 
 <h2 id="excluir-conta">Como excluir sua conta e seus dados</h2>
 <ul>
   <li><strong>No app</strong>: ⚙ Configurações → Conta → Excluir minha conta. Isso apaga a conta e todo o progresso na
-    nuvem (o que estiver no aparelho fica até você desinstalar o app).</li>
+    nuvem, com o resumo da conta (o que estiver no aparelho fica até você desinstalar o app). Os dados de uso e os
+    relatórios de erro somem nos prazos acima; para apagá-los antes, peça pelo e-mail.</li>
   <li><strong>Sem o app</strong>: mande um e-mail para <a href="mailto:gdbperes@gmail.com">gdbperes@gmail.com</a>
     com o e-mail da conta, pedindo a exclusão. Apagamos a conta e o progresso em até 30 dias e confirmamos por
     e-mail.</li>
@@ -104,7 +149,8 @@ assinatura estiver ativa e responder quando você entrar em contato. Não usamos
 
 <h2>Seus direitos</h2>
 <p>Você pode pedir acesso, correção ou exclusão dos seus dados, conforme a LGPD e outras leis aplicáveis, pelo
-e-mail acima.</p>
+e-mail acima, e pode a qualquer momento desligar os dados de uso e os e-mails de novidades em ⚙ Configurações →
+Privacidade.</p>
 
 <h2>Crianças</h2>
 <p>O app não é feito para coletar dados de crianças. Se você é responsável por uma criança que criou uma conta,
@@ -128,7 +174,9 @@ collects, how it is used and shared, and how you can have it deleted. Contact:
 <ul>
   <li>The app works without an account: without signing in, your progress stays on your device.</li>
   <li>With an account, we store your progress in the cloud so you don't lose it and can use it on other devices.</li>
-  <li>No ads, we don't sell data, and we don't use analytics or tracking tools.</li>
+  <li>No ads, and we don't sell data. To improve the app we use Google Analytics for Firebase (how the app is used)
+    and Firebase Crashlytics (error reports), without the advertising ID. You can turn both off in ⚙ Settings →
+    Privacy.</li>
 </ul>
 
 <h2>Data we collect</h2>
@@ -139,8 +187,27 @@ collects, how it is used and shared, and how you can have it deleted. Contact:
   <li><strong>Progress</strong> (only with an account): practice history (lessons, songs played, accuracy, timing
     and per-note statistics), levels, achievements, coins, unlocked songs, some app preferences and the model of the
     device that synced last.</li>
-  <li><strong>Subscription</strong>: purchases are made through Google Play. We only receive confirmation that a
-    subscription is active; we have no access to your payment details.</li>
+  <li><strong>Subscription</strong>: purchases are made through Google Play. We receive confirmation that a
+    subscription is active, the chosen plan, whether auto-renew is on and the purchase identifier; we have no access
+    to your payment details.</li>
+  <li><strong>Usage data</strong> (Google Analytics for Firebase, if the option is on): what you do in the app
+    (screens opened; lessons, drills and songs started and finished, with accuracy, times and levels; settings;
+    whether you play on a USB, Bluetooth or on-screen keyboard, and the keyboard's name; use of coins and of the
+    subscription screen), plus device and app information (model, Android version, language, app version) and an
+    identifier of the installed app (Firebase app instance ID). Google derives an approximate region (country,
+    city) from the IP address, which is not stored. We don't collect the advertising ID. With an account, this data
+    is linked to the account identifier. We never send what you type (such as a search query).</li>
+  <li><strong>Error reports</strong> (Firebase Crashlytics, if the option is on): when the app crashes or something
+    fails, the technical error record, the device model and state (memory, free space, orientation), the app
+    version, the screen and drill that were open and the last steps taken in the app.</li>
+  <li><strong>Account summary</strong> (only with an account): next to your progress we store a summary to
+    understand how the app is used: app version, device model, language, level, lessons, songs, coins, plan and
+    your privacy choices. With usage data on, also the device's Android version, language, country and time zone,
+    screen size, memory, the store that installed the app and usage counts (times opened, time in the app, drills
+    done, keyboard name). Turning usage data off removes that part from the summary on the next sync.</li>
+  <li><strong>News e-mails</strong> (only if you agree): the “Get news by e-mail” option starts off. If you turn it
+    on, we store the choice and the date and may send app news to the account's email. To stop, turn the option off
+    or ask us by email.</li>
 </ul>
 
 <h2 id="testers">Tester sign-up (website)</h2>
@@ -153,19 +220,34 @@ using the email above. The website uses no cookies, ads or analytics.</p>
 <h2>Data that stays on your device</h2>
 <ul>
   <li>Notes played on your keyboard (MIDI over USB or Bluetooth) or on the on-screen keyboard are processed on the
-    device and are not sent anywhere.</li>
+    device. The notes themselves are not sent; usage data only carries totals (for example, how many notes and how
+    many were right in a song).</li>
   <li>The location permission requested on Android 11 and earlier is only used to find Bluetooth keyboards (an
     Android requirement); the app never reads or stores your location.</li>
-  <li>If the app crashes, the error text is kept on the device and only sent if you choose to share it.</li>
+  <li>If the app crashes, besides the Crashlytics report (if the option is on), the full error text is kept on the
+    device and only sent if you choose to share it.</li>
 </ul>
 
 <h2>How we use data</h2>
 <p>To sign you in, store and sync your progress across devices, unlock Premium while your subscription is active,
-and reply when you contact us. We don't use your data for advertising.</p>
+and reply when you contact us. Usage data, error reports and the account summary are used to understand how the
+app is used and what to improve (which lessons and songs work, where people get stuck, which errors to fix). News
+e-mails only go to people who agreed. We don't use your data for advertising.</p>
+
+<h2 id="usage-data">How to turn off usage data and error reports</h2>
+<p>In ⚙ Settings → Privacy, turn off “Send usage and error data”. The app immediately stops sending usage data and
+error reports, and the account summary stops carrying (and deletes) device and usage data. What was already sent
+follows the retention periods below; to delete it sooner, ask us by email.</p>
 
 <h2>Who we share data with</h2>
 <ul>
-  <li><strong>Google Firebase</strong> (Authentication and Cloud Firestore): stores your account and progress.
+  <li><strong>Google Firebase</strong> (Authentication and Cloud Firestore): stores your account, progress and
+    account summary. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</li>
+  <li><strong>Google Analytics for Firebase</strong>: receives usage data.
+    <a href="https://firebase.google.com/support/privacy">Firebase privacy</a> and
+    <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that use its
+    services</a>.</li>
+  <li><strong>Firebase Crashlytics</strong>: receives error reports.
     <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</li>
   <li><strong>Google Play</strong>: purchases, subscriptions and app updates.
     <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
@@ -176,16 +258,23 @@ and reply when you contact us. We don't use your data for advertising.</p>
 <p>We don't sell or rent data, and would only share it beyond this if required by law.</p>
 
 <h2>Security</h2>
-<p>Data is encrypted in transit (HTTPS) and, in the cloud, each account can only read and write its own progress.</p>
+<p>Data is encrypted in transit (HTTPS) and, in the cloud, each account can only read and write its own progress.
+Usage data and error reports can only be seen by the developer, in the Firebase console.</p>
 
 <h2>Retention</h2>
-<p>As long as the account exists. When you delete your account, the account and cloud progress are deleted
-immediately.</p>
+<ul>
+  <li><strong>Account, progress and account summary</strong>: as long as the account exists. When you delete your
+    account, they are deleted immediately.</li>
+  <li><strong>Usage data</strong>: up to 14 months, then deleted. Reports with totals, which don't identify anyone,
+    may be kept.</li>
+  <li><strong>Error reports</strong>: 90 days.</li>
+</ul>
 
 <h2 id="delete-account">How to delete your account and data</h2>
 <ul>
   <li><strong>In the app</strong>: ⚙ Settings → Account → Delete my account. This deletes the account and all cloud
-    progress (what is on the device remains until you uninstall the app).</li>
+    progress, including the account summary (what is on the device remains until you uninstall the app). Usage
+    data and error reports are deleted within the periods above; to delete them sooner, ask us by email.</li>
   <li><strong>Without the app</strong>: email <a href="mailto:gdbperes@gmail.com">gdbperes@gmail.com</a> from or
     mentioning the account's email and ask for deletion. We delete the account and progress within 30 days and
     confirm by email.</li>
@@ -195,7 +284,7 @@ immediately.</p>
 
 <h2>Your rights</h2>
 <p>You can request access to, correction or deletion of your data, under the LGPD, GDPR and other applicable laws,
-using the email above.</p>
+using the email above, and you can turn off usage data and news e-mails at any time in ⚙ Settings → Privacy.</p>
 
 <h2>Children</h2>
 <p>The app is not designed to collect data from children. If you are the parent or guardian of a child who
