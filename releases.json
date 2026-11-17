@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b231",
+  "name": "Versão 1.0.131",
+  "body": "Novidades: música do dia, liberada para todos e com moedas extras; presente de boas-vindas em moedas para liberar sua primeira música; atalho \"Comece aqui\" para a primeira aula; e lembretes de treino (dá para desligar nas Configurações)."
+ },
+ {
   "tag_name": "b230",
   "name": "Versão 1.0.130",
   "body": "Recompensa diária com visual novo: a moeda girando, as moedas contando e a trilha da semana. E a tela de assinatura mais clara, mostrando como funciona o teste grátis e tudo o que o Premium libera."
@@ -293,10 +298,5 @@
   "tag_name": "b154",
   "name": "Versão 1.0.54",
   "body": "Configurações: convite dourado ao Premium no topo (plano padrão)"
- },
- {
-  "tag_name": "b153",
-  "name": "Versão 1.0.53",
-  "body": "Convite ao Premium: \"Agora não\" como botão, logo abaixo de Assinar"
  }
 ]
