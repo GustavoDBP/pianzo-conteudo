@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b230",
+  "name": "Versão 1.0.130",
+  "body": "Recompensa diária com visual novo: a moeda girando, as moedas contando e a trilha da semana. E a tela de assinatura mais clara, mostrando como funciona o teste grátis e tudo o que o Premium libera."
+ },
+ {
   "tag_name": "b224",
   "name": "Versão 1.0.124",
   "body": "Main avança para o teste-fechado: app do teste-fechado e Cloud Functions da main\n\nJunta o teste-fechado na main para os dois ficarem iguais. Nos conflitos do app\n(CommunityActivity, HomeActivity, SongsActivity) vale a versão do teste-fechado,\nque já tem \"Músicas refeitas\" com os dados de uso e a correção do crash em\nMinhas músicas. Da main vêm o aviso por e-mail de testador novo, o workflow das\nCloud Functions e o release.yml que ignora mudanças só nelas; no release.yml as\nduas listas de caminhos ignorados (functions e painel) ficam juntas."
@@ -293,10 +298,5 @@
   "tag_name": "b153",
   "name": "Versão 1.0.53",
   "body": "Convite ao Premium: \"Agora não\" como botão, logo abaixo de Assinar"
- },
- {
-  "tag_name": "b152",
-  "name": "Versão 1.0.52",
-  "body": "Primeira abertura: convite ao Premium depois do idioma e da conta\n\nA tela de assinatura aparece uma vez como convite (título \"Experimente o\nPremium\", sem voltar, com \"Agora não\"); quem já é Premium não vê."
  }
 ]
