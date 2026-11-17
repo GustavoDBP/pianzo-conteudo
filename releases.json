@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b232",
+  "name": "Versão 1.0.132",
+  "body": "Em português, as músicas aparecem com o nome conhecido aqui (Sonata ao Luar, Para Elisa, Marcha Turca…), e a busca acha também pelo nome original e pelos nomes em inglês, espanhol e italiano (ex.: \"moonlight\")."
+ },
+ {
   "tag_name": "b231",
   "name": "Versão 1.0.131",
   "body": "Novidades: música do dia, liberada para todos e com moedas extras; presente de boas-vindas em moedas para liberar sua primeira música; atalho \"Comece aqui\" para a primeira aula; e lembretes de treino (dá para desligar nas Configurações)."
@@ -293,10 +298,5 @@
   "tag_name": "b155",
   "name": "Versão 1.0.55",
   "body": "Tela inicial: ícones dos cartões não são mais cortados ao flutuar\n\nO cartão cortava o que passava do espaçamento interno; o ícone sobe 5dp na\nanimação e perdia o topo."
- },
- {
-  "tag_name": "b154",
-  "name": "Versão 1.0.54",
-  "body": "Configurações: convite dourado ao Premium no topo (plano padrão)"
  }
 ]
