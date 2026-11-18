@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b233",
+  "name": "Versão 1.0.133",
+  "body": "• Começo guiado: escolha o seu nível e toque logo a sua primeira música.\n• Trilha com músicas: já na primeira aula você toca Ode à Alegria, e cada unidade termina numa música conhecida.\n• Meta do dia, sequência com baús de prêmios e protetores para os dias corridos.\n• Treino do dia: 3 minutos montados para você.\n• Visual novo, mais leve, e configurações mais simples.\n• Teclado da tela com teclas maiores e acordes com dois dedos."
+ },
+ {
   "tag_name": "b232",
   "name": "Versão 1.0.132",
   "body": "Em português, as músicas aparecem com o nome conhecido aqui (Sonata ao Luar, Para Elisa, Marcha Turca…), e a busca acha também pelo nome original e pelos nomes em inglês, espanhol e italiano (ex.: \"moonlight\")."
@@ -293,10 +298,5 @@
   "tag_name": "b156",
   "name": "Versão 1.0.56",
   "body": "Música de fundo sorteada de toda a biblioteca\n\nAntes seguia uma lista fixa de 15 peças e sempre começava pela mesma\n(Gymnopédie). Agora sorteia entre todas as músicas, sem repetir as últimas\n(nem entre uma abertura e outra), para a pessoa conhecer peças que pode tocar."
- },
- {
-  "tag_name": "b155",
-  "name": "Versão 1.0.55",
-  "body": "Tela inicial: ícones dos cartões não são mais cortados ao flutuar\n\nO cartão cortava o que passava do espaçamento interno; o ícone sobe 5dp na\nanimação e perdia o topo."
  }
 ]
