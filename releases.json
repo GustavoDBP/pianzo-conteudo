@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b235",
+  "name": "Versão 1.0.135",
+  "body": "• Quando você ganhar moedas, músicas ou o Premium de presente, o Pianzo avisa, mesmo com o app fechado.\n• O lembrete do dia agora avisa quando seu baú ou suas moedas de hoje estão esperando."
+ },
+ {
   "tag_name": "b234",
   "name": "Versão 1.0.134",
   "body": "• Toda aula agora termina com você tocando uma música conhecida.\n• Trilha mais limpa: tocar na aula já começa, e cada aula leva o nome da música.\n• Teclado na tela maior, que desliza com a música e se divide em dois quando as mãos se afastam.\n• Se você fechar o app no meio dos primeiros passos, ele continua de onde parou.\n• Visual renovado e correções."
@@ -293,10 +298,5 @@
   "tag_name": "b158",
   "name": "Versão 1.0.58",
   "body": "Foto do perfil da conta Google no avatar\n\nBaixada uma vez e guardada no aparelho; enquanto não chega (ou sem foto, como no\nlogin por e-mail), fica a inicial. Apagada ao sair ou excluir a conta."
- },
- {
-  "tag_name": "b157",
-  "name": "Versão 1.0.57",
-  "body": "Nível de pianista: XP de músicas, lições e treino\n\nEstrelas novas dão XP conforme a dificuldade (10/25/50), módulos do Aprender 20 e\nlinhas do treino 1 (+1 sem erros). Calculado do histórico, então vale para o\npassado e acompanha a nuvem. Selo do nível na foto do perfil, barra no cartão\nProgresso, +XP no fim da música e da lição, seção na tela Progresso e\ncomemoração ao subir. O nível do treino vira \"nível de leitura\"."
  }
 ]
