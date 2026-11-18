@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b234",
+  "name": "Versão 1.0.134",
+  "body": "• Toda aula agora termina com você tocando uma música conhecida.\n• Trilha mais limpa: tocar na aula já começa, e cada aula leva o nome da música.\n• Teclado na tela maior, que desliza com a música e se divide em dois quando as mãos se afastam.\n• Se você fechar o app no meio dos primeiros passos, ele continua de onde parou.\n• Visual renovado e correções."
+ },
+ {
   "tag_name": "b233",
   "name": "Versão 1.0.133",
   "body": "• Começo guiado: escolha o seu nível e toque logo a sua primeira música.\n• Trilha com músicas: já na primeira aula você toca Ode à Alegria, e cada unidade termina numa música conhecida.\n• Meta do dia, sequência com baús de prêmios e protetores para os dias corridos.\n• Treino do dia: 3 minutos montados para você.\n• Visual novo, mais leve, e configurações mais simples.\n• Teclado da tela com teclas maiores e acordes com dois dedos."
@@ -293,10 +298,5 @@
   "tag_name": "b157",
   "name": "Versão 1.0.57",
   "body": "Nível de pianista: XP de músicas, lições e treino\n\nEstrelas novas dão XP conforme a dificuldade (10/25/50), módulos do Aprender 20 e\nlinhas do treino 1 (+1 sem erros). Calculado do histórico, então vale para o\npassado e acompanha a nuvem. Selo do nível na foto do perfil, barra no cartão\nProgresso, +XP no fim da música e da lição, seção na tela Progresso e\ncomemoração ao subir. O nível do treino vira \"nível de leitura\"."
- },
- {
-  "tag_name": "b156",
-  "name": "Versão 1.0.56",
-  "body": "Música de fundo sorteada de toda a biblioteca\n\nAntes seguia uma lista fixa de 15 peças e sempre começava pela mesma\n(Gymnopédie). Agora sorteia entre todas as músicas, sem repetir as últimas\n(nem entre uma abertura e outra), para a pessoa conhecer peças que pode tocar."
  }
 ]
