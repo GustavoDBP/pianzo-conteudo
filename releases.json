@@ -1,5 +1,10 @@
 [
  {
+  "tag_name": "b236",
+  "name": "Versão 1.0.136",
+  "body": "O teclado ligado por cabo não desconecta mais quando o app começa a tocar música."
+ },
+ {
   "tag_name": "b235",
   "name": "Versão 1.0.135",
   "body": "• Quando você ganhar moedas, músicas ou o Premium de presente, o Pianzo avisa, mesmo com o app fechado.\n• O lembrete do dia agora avisa quando seu baú ou suas moedas de hoje estão esperando."
@@ -293,10 +298,5 @@
   "tag_name": "b159",
   "name": "Versão 1.0.59",
   "body": "Merge pull request #11 from GustavoDBP/ccr-9f9097fd-rtvrlb\n\nRemove pontos e combo; recompensa diária em moedas"
- },
- {
-  "tag_name": "b158",
-  "name": "Versão 1.0.58",
-  "body": "Foto do perfil da conta Google no avatar\n\nBaixada uma vez e guardada no aparelho; enquanto não chega (ou sem foto, como no\nlogin por e-mail), fica a inicial. Apagada ao sair ou excluir a conta."
  }
 ]
